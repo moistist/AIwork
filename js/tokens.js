@@ -84,6 +84,7 @@ function renderTable() {
 
   tbody.innerHTML = filteredTokens.map(token => {
     const statusInfo = getStatusInfo(token.status);
+    const hasTutorial = token.tutorialUrl && token.tutorialUrl.trim() !== '';
     return `
       <tr>
         <td>${escapeHtml(token.platform)}</td>
@@ -95,6 +96,14 @@ function renderTable() {
              class="claim-btn ${token.status === 'expired' ? 'disabled' : ''}">
             ${token.status === 'expired' ? '已过期' : '领取'}
           </a>
+        </td>
+        <td>
+          ${hasTutorial
+            ? `<a href="${escapeHtml(token.tutorialUrl)}" target="_blank" rel="noopener noreferrer" class="tutorial-btn">
+                <span>📖</span> 教程
+               </a>`
+            : '<span class="tutorial-btn disabled">暂无</span>'
+          }
         </td>
       </tr>
     `;
