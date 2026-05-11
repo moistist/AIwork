@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIwork - 发现最新AI工具与免费资源</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+    }
+
+    #starfield {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 0 24px;
+      max-width: 800px;
+    }
+
+    .hero-title {
+      font-size: 4.5rem;
+      font-weight: 800;
+      letter-spacing: -2px;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, var(--color-gold-light), var(--color-gold), var(--color-gold-light));
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: goldShift 4s ease-in-out infinite;
+    }
+
+    @keyframes goldShift {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    .hero-subtitle {
+      font-size: 1.4rem;
+      color: var(--color-text-muted);
+      margin-bottom: 40px;
+      font-weight: 400;
+    }
+
+    .hero-cta {
+      display: inline-flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .tools-section {
+      background: var(--color-bg);
+    }
+
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+
+    .tool-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 16px;
+      padding: 28px;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .tool-card:hover {
+      border-color: var(--color-gold);
+      box-shadow: 0 0 24px rgba(212, 168, 67, 0.2), 0 8px 32px rgba(0, 0, 0, 0.3);
+      transform: translateY(-6px);
+    }
+
+    .tool-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--color-gold-dark), var(--color-gold));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 12px rgba(212, 168, 67, 0.25);
+    }
+
+    .tool-name {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: 8px;
+    }
+
+    .tool-desc {
+      font-size: 0.95rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .tool-tag {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      background: rgba(212, 168, 67, 0.12);
+      color: var(--color-gold);
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .tools-footer {
+      text-align: center;
+    }
+
+    .features-section {
+      background: var(--color-surface);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+    }
+
+    .feature-card {
+      background: var(--color-surface-light);
+      border: 1px solid var(--color-border);
+      border-radius: 20px;
+      padding: 40px 32px;
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .feature-card:hover {
+      border-color: var(--color-gold);
+      transform: translateY(-4px);
+    }
+
+    .feature-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, rgba(212, 168, 67, 0.2), rgba(212, 168, 67, 0.05));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      margin: 0 auto 20px;
+      border: 1px solid rgba(212, 168, 67, 0.2);
+    }
+
+    .feature-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: 12px;
+    }
+
+    .feature-desc {
+      font-size: 0.95rem;
+      color: var(--color-text-muted);
+      line-height: 1.7;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        min-height: 500px;
+        height: auto;
+        padding: 120px 0 80px;
+      }
+
+      .hero-title {
+        font-size: 2.8rem;
+        letter-spacing: -1px;
+      }
+
+      .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 32px;
+      }
+
+      .hero-cta .btn {
+        padding: 10px 24px;
+        font-size: 0.95rem;
+      }
+
+      .tools-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-card {
+        padding: 32px 24px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-title {
+        font-size: 2.2rem;
+      }
+
+      .hero-subtitle {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="./index.html" class="navbar-brand">AIwork</a>
+      <button class="navbar-toggle" aria-label="切换导航">☰</button>
+      <ul class="navbar-nav">
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="./tools.html">工具</a></li>
+        <li><a href="./tokens.html">Token</a></li>
+        <li><a href="./about.html">关于</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <canvas id="starfield"></canvas>
+    <div class="hero-content">
+      <h1 class="hero-title">AIwork</h1>
+      <p class="hero-subtitle">发现最新AI工具与免费资源</p>
+      <div class="hero-cta">
+        <a href="./tools.html" class="btn btn-primary">浏览工具</a>
+        <a href="./tokens.html" class="btn btn-outline">免费Token</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tools-section">
+    <div class="container">
+      <h2 class="section-title scroll-reveal">精选AI工具</h2>
+      <div class="tools-grid" id="tools-preview"></div>
+      <div class="tools-footer scroll-reveal">
+        <a href="./tools.html" class="btn btn-outline">查看全部</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section features-section">
+    <div class="container">
+      <h2 class="section-title scroll-reveal">为什么选择AIwork</h2>
+      <div class="features-grid">
+        <div class="feature-card scroll-reveal">
+          <div class="feature-icon">🚀</div>
+          <h3 class="feature-title">最新工具</h3>
+          <p class="feature-desc">每日更新全球最新发布的AI工具，让你第一时间掌握行业动态，不错过任何创新产品。</p>
+        </div>
+        <div class="feature-card scroll-reveal">
+          <div class="feature-icon">🎁</div>
+          <h3 class="feature-title">免费Token</h3>
+          <p class="feature-desc">收集整理各大AI平台的免费试用Token和优惠活动，帮助你零成本体验顶级AI服务。</p>
+        </div>
+        <div class="feature-card scroll-reveal">
+          <div class="feature-icon">🔄</div>
+          <h3 class="feature-title">持续更新</h3>
+          <p class="feature-desc">我们的内容团队持续追踪AI领域变化，确保所有信息准确及时，为你提供可靠的决策参考。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">AIwork</div>
+      <ul class="footer-links">
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="./tools.html">工具</a></li>
+        <li><a href="./tokens.html">Token</a></li>
+        <li><a href="./about.html">关于</a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2024 AIwork. 保留所有权利。</p>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/home.js"></script>
+</body>
+</html>

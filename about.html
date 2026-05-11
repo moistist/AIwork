@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于 - AIwork</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    .about-page {
+      padding-top: 64px;
+      min-height: 100vh;
+    }
+
+    .about-header {
+      padding: 60px 0 40px;
+      text-align: center;
+    }
+
+    .about-header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, var(--color-gold), var(--color-gold-light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .about-header p {
+      color: var(--color-text-muted);
+      font-size: 1.1rem;
+    }
+
+    .about-intro {
+      padding-bottom: 80px;
+    }
+
+    .about-mission {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 60px;
+    }
+
+    .about-mission h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: 16px;
+    }
+
+    .about-mission p {
+      color: var(--color-text-muted);
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .feature-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 16px;
+      padding: 32px 24px;
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .feature-card:hover {
+      border-color: var(--color-gold);
+      transform: translateY(-4px);
+    }
+
+    .feature-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(212, 168, 67, 0.2), rgba(212, 168, 67, 0.05));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      margin: 0 auto 16px;
+      border: 1px solid rgba(212, 168, 67, 0.2);
+    }
+
+    .feature-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: 8px;
+    }
+
+    .feature-desc {
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+    }
+
+    .changelog-section {
+      padding: 80px 0;
+      background: var(--color-surface);
+      position: relative;
+    }
+
+    .changelog-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--color-border), transparent);
+    }
+
+    .changelog-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 48px;
+      background: linear-gradient(135deg, var(--color-gold), var(--color-gold-light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 24px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--color-border);
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 64px;
+      padding-bottom: 40px;
+    }
+
+    .timeline-item:last-child {
+      padding-bottom: 0;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: 15px;
+      top: 4px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--color-gold);
+      border: 3px solid var(--color-surface);
+      box-shadow: 0 0 0 2px var(--color-gold);
+    }
+
+    .timeline-content {
+      background: var(--color-surface-light);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: 20px 24px;
+    }
+
+    .timeline-version {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--color-gold);
+      margin-bottom: 4px;
+    }
+
+    .timeline-date {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      margin-bottom: 10px;
+    }
+
+    .timeline-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .timeline-list li {
+      position: relative;
+      padding-left: 16px;
+      font-size: 0.95rem;
+      color: var(--color-text);
+      line-height: 1.7;
+    }
+
+    .timeline-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--color-gold);
+    }
+
+    .contact-section {
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .contact-section h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, var(--color-gold), var(--color-gold-light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .contact-section p {
+      color: var(--color-text-muted);
+      font-size: 1.05rem;
+      margin-bottom: 32px;
+    }
+
+    .contact-links {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 28px;
+      border-radius: 10px;
+      border: 1px solid var(--color-border);
+      background: var(--color-surface);
+      color: var(--color-text);
+      font-size: 0.95rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .contact-link:hover {
+      border-color: var(--color-gold);
+      color: var(--color-gold);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .about-header h1 {
+        font-size: 2rem;
+      }
+
+      .about-header p {
+        font-size: 1rem;
+      }
+
+      .about-mission h2 {
+        font-size: 1.4rem;
+      }
+
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .timeline::before {
+        left: 16px;
+      }
+
+      .timeline-item {
+        padding-left: 48px;
+      }
+
+      .timeline-dot {
+        left: 7px;
+      }
+
+      .changelog-title,
+      .contact-section h2 {
+        font-size: 1.8rem;
+      }
+
+      .contact-link {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .about-header h1 {
+        font-size: 1.7rem;
+      }
+
+      .timeline-content {
+        padding: 16px 18px;
+      }
+
+      .timeline-list li {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="./index.html" class="navbar-brand">AIwork</a>
+      <button class="navbar-toggle" aria-label="切换导航">☰</button>
+      <ul class="navbar-nav">
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="./tools.html">工具</a></li>
+        <li><a href="./tokens.html">Token</a></li>
+        <li><a href="./about.html">关于</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="about-page">
+    <div class="container">
+      <div class="about-header">
+        <h1>关于AIwork</h1>
+        <p>了解我们的使命与愿景</p>
+      </div>
+
+      <div class="about-intro">
+        <div class="about-mission">
+          <h2>我们的使命</h2>
+          <p>AIwork 致力于为广大开发者和AI爱好者提供最新、最全面的AI工具与免费资源信息。我们希望通过整合全球优质的AI平台资源，降低大家接触和使用AI技术的门槛，让每个人都能轻松体验到人工智能带来的便利与创新。</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🛠️</div>
+            <h3 class="feature-title">工具精选</h3>
+            <p class="feature-desc">每日筛选并收录全球最新发布的AI工具，覆盖聊天、图像、代码、写作等多个领域。</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🎁</div>
+            <h3 class="feature-title">免费资源</h3>
+            <p class="feature-desc">实时追踪各大AI平台的免费Token、试用额度和优惠活动，助你零成本探索AI。</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔄</div>
+            <h3 class="feature-title">持续更新</h3>
+            <p class="feature-desc">内容团队持续追踪AI领域动态，确保信息准确及时，为你提供可靠的决策参考。</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🌐</div>
+            <h3 class="feature-title">开放共享</h3>
+            <p class="feature-desc">所有资源信息免费开放，支持社区共建，欢迎提交你发现的新工具和优惠活动。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="changelog-section">
+      <div class="container">
+        <h2 class="changelog-title">更新日志</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-version">v1.2.0</div>
+              <div class="timeline-date">2024-10-15</div>
+              <ul class="timeline-list">
+                <li>新增免费Token资源页面，支持按有效期筛选</li>
+                <li>优化工具库搜索体验，支持分类筛选</li>
+                <li>改进移动端适配，提升页面加载速度</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-version">v1.1.0</div>
+              <div class="timeline-date">2024-09-20</div>
+              <ul class="timeline-list">
+                <li>上线AI工具库，收录50+热门AI工具</li>
+                <li>新增工具分类标签与搜索功能</li>
+                <li>添加星空背景动画与滚动揭示效果</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-version">v1.0.0</div>
+              <div class="timeline-date">2024-08-01</div>
+              <ul class="timeline-list">
+                <li>AIwork网站正式上线</li>
+                <li>完成首页设计与基础页面搭建</li>
+                <li>确立金色暗色主题视觉风格</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <h2>联系我们</h2>
+        <p>如有任何问题、建议或合作意向，欢迎通过以下方式与我们取得联系。</p>
+        <div class="contact-links">
+          <a href="https://github.com/aiwork" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <span>🐙</span> GitHub
+          </a>
+          <a href="mailto:hello@aiwork.dev" class="contact-link">
+            <span>✉️</span> 邮箱
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">AIwork</div>
+      <ul class="footer-links">
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="./tools.html">工具</a></li>
+        <li><a href="./tokens.html">Token</a></li>
+        <li><a href="./about.html">关于</a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2024 AIwork. 保留所有权利。</p>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

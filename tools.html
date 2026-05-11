@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI工具 - AIwork</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    .tools-page {
+      padding-top: 64px;
+      min-height: 100vh;
+    }
+
+    .tools-header {
+      padding: 60px 0 40px;
+      text-align: center;
+    }
+
+    .tools-header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, var(--color-gold), var(--color-gold-light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .tools-header p {
+      color: var(--color-text-muted);
+      font-size: 1.1rem;
+    }
+
+    .search-section {
+      padding-bottom: 40px;
+    }
+
+    .search-box {
+      position: relative;
+      max-width: 600px;
+      margin: 0 auto 24px;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 16px 24px 16px 52px;
+      font-size: 1rem;
+      background: var(--color-surface);
+      border: 2px solid var(--color-gold);
+      border-radius: 12px;
+      color: var(--color-text);
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .search-box input::placeholder {
+      color: var(--color-text-muted);
+    }
+
+    .search-box input:focus {
+      box-shadow: 0 0 20px rgba(212, 168, 67, 0.3);
+      border-color: var(--color-gold-light);
+    }
+
+    .search-box .search-icon {
+      position: absolute;
+      left: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--color-gold);
+      font-size: 1.2rem;
+    }
+
+    .filter-tabs {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .filter-tab {
+      padding: 10px 24px;
+      border-radius: 8px;
+      border: 1px solid var(--color-border);
+      background: var(--color-surface);
+      color: var(--color-text-muted);
+      font-size: 0.95rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .filter-tab:hover {
+      border-color: var(--color-gold);
+      color: var(--color-gold);
+    }
+
+    .filter-tab.active {
+      background: var(--color-gold);
+      color: #fff;
+      border-color: var(--color-gold);
+    }
+
+    .tools-list-section {
+      padding-bottom: 80px;
+    }
+
+    .tools-list {
+      border: 1px solid var(--color-border);
+      border-radius: 16px;
+      overflow: hidden;
+      background: var(--color-surface);
+    }
+
+    .tool-item {
+      border-bottom: 1px solid var(--color-border);
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .tool-item:last-child {
+      border-bottom: none;
+    }
+
+    .tool-item:hover {
+      background: var(--color-surface-light);
+    }
+
+    .tool-item-header {
+      display: flex;
+      align-items: center;
+      padding: 20px 24px;
+      gap: 16px;
+    }
+
+    .tool-icon-wrap {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--color-gold-dark), var(--color-gold));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    .tool-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .tool-name {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--color-gold);
+      margin-bottom: 4px;
+    }
+
+    .tool-desc {
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+      line-height: 1.5;
+      margin-bottom: 6px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .tool-category-tag {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 12px;
+      background: rgba(212, 168, 67, 0.12);
+      color: var(--color-gold);
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .tool-meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-shrink: 0;
+    }
+
+    .tool-pricing {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      white-space: nowrap;
+    }
+
+    .tool-arrow {
+      color: var(--color-text-muted);
+      font-size: 1.2rem;
+      transition: var(--transition);
+    }
+
+    .tool-item.expanded .tool-arrow {
+      transform: rotate(180deg);
+      color: var(--color-gold);
+    }
+
+    .tool-details {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+      border-left: 3px solid var(--color-gold);
+      margin-left: 24px;
+    }
+
+    .tool-item.expanded .tool-details {
+      max-height: 500px;
+      padding: 0 24px 20px 20px;
+    }
+
+    .tool-details-inner {
+      opacity: 0;
+      transition: opacity 0.3s ease 0.1s;
+    }
+
+    .tool-item.expanded .tool-details-inner {
+      opacity: 1;
+    }
+
+    .detail-section {
+      margin-bottom: 16px;
+    }
+
+    .detail-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .detail-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+
+    .detail-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .detail-feature {
+      padding: 4px 12px;
+      border-radius: 8px;
+      background: var(--color-surface-light);
+      border: 1px solid var(--color-border);
+      color: var(--color-text);
+      font-size: 0.85rem;
+    }
+
+    .detail-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--color-gold);
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .detail-link:hover {
+      color: var(--color-gold-light);
+    }
+
+    .detail-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .detail-tag {
+      padding: 2px 10px;
+      border-radius: 12px;
+      background: rgba(212, 168, 67, 0.1);
+      color: var(--color-gold);
+      font-size: 0.8rem;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 60px 24px;
+      color: var(--color-text-muted);
+    }
+
+    .empty-state-icon {
+      font-size: 3rem;
+      margin-bottom: 16px;
+      opacity: 0.5;
+    }
+
+    .empty-state h3 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+      color: var(--color-text);
+    }
+
+    @media (max-width: 768px) {
+      .tools-header h1 {
+        font-size: 2rem;
+      }
+
+      .tools-header p {
+        font-size: 1rem;
+      }
+
+      .search-box input {
+        padding: 14px 20px 14px 48px;
+        font-size: 0.95rem;
+      }
+
+      .filter-tab {
+        padding: 8px 18px;
+        font-size: 0.9rem;
+      }
+
+      .tool-item-header {
+        flex-wrap: wrap;
+        padding: 16px;
+      }
+
+      .tool-meta {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 4px;
+        padding-left: 64px;
+      }
+
+      .tool-details {
+        margin-left: 16px;
+      }
+
+      .tool-item.expanded .tool-details {
+        padding: 0 16px 16px 16px;
+      }
+
+      .tools-list {
+        border: none;
+        background: transparent;
+      }
+
+      .tool-item {
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: 12px;
+        margin-bottom: 12px;
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      .tool-item:last-child {
+        border-bottom: 1px solid var(--color-border);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .tools-header h1 {
+        font-size: 1.7rem;
+      }
+
+      .tool-meta {
+        padding-left: 0;
+        margin-top: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="./index.html" class="navbar-brand">AIwork</a>
+      <button class="navbar-toggle" aria-label="切换导航">☰</button>
+      <ul class="navbar-nav">
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="./tools.html">工具</a></li>
+        <li><a href="./tokens.html">Token</a></li>
+        <li><a href="./about.html">关于</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="tools-page">
+    <div class="container">
+      <div class="tools-header">
+        <h1>AI工具库</h1>
+        <p>发现和探索最新最实用的AI工具</p>
+      </div>
+
+      <div class="search-section">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" placeholder="搜索AI工具...">
+        </div>
+        <div class="filter-tabs" id="filterTabs">
+          <button class="filter-tab active" data-category="全部">全部</button>
+          <button class="filter-tab" data-category="聊天">聊天</button>
+          <button class="filter-tab" data-category="图像">图像</button>
+          <button class="filter-tab" data-category="代码">代码</button>
+          <button class="filter-tab" data-category="写作">写作</button>
+          <button class="filter-tab" data-category="音频">音频</button>
+          <button class="filter-tab" data-category="视频">视频</button>
+        </div>
+      </div>
+
+      <div class="tools-list-section">
+        <div class="tools-list" id="toolsList"></div>
+        <div class="empty-state" id="emptyState" style="display: none;">
+          <div class="empty-state-icon">🔍</div>
+          <h3>未找到相关工具</h3>
+          <p>请尝试其他关键词或分类</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">AIwork</div>
+      <ul class="footer-links">
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="./tools.html">工具</a></li>
+        <li><a href="./tokens.html">Token</a></li>
+        <li><a href="./about.html">关于</a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2024 AIwork. 保留所有权利。</p>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/tools.js"></script>
+</body>
+</html>

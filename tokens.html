@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>免费Token - AIwork</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    .tokens-page {
+      padding-top: 64px;
+      min-height: 100vh;
+    }
+
+    .tokens-header {
+      padding: 60px 0 40px;
+      text-align: center;
+    }
+
+    .tokens-header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, var(--color-gold), var(--color-gold-light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .tokens-header p {
+      color: var(--color-text-muted);
+      font-size: 1.1rem;
+    }
+
+    .filter-section {
+      padding-bottom: 40px;
+    }
+
+    .filter-tabs {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .filter-tab {
+      padding: 10px 24px;
+      border-radius: 8px;
+      border: 1px solid var(--color-border);
+      background: var(--color-surface);
+      color: var(--color-text-muted);
+      font-size: 0.95rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .filter-tab:hover {
+      border-color: var(--color-gold);
+      color: var(--color-gold);
+    }
+
+    .filter-tab.active {
+      background: var(--color-gold);
+      color: #fff;
+      border-color: var(--color-gold);
+    }
+
+    .tokens-table-section {
+      padding-bottom: 80px;
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+      border: 1px solid var(--color-border);
+      border-radius: 16px;
+      background: var(--color-surface);
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .tokens-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 600px;
+    }
+
+    .tokens-table thead th {
+      padding: 16px 20px;
+      text-align: left;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 2px solid var(--color-gold);
+      background: var(--color-surface-light);
+      white-space: nowrap;
+    }
+
+    .tokens-table tbody tr {
+      border-bottom: 1px solid var(--color-border);
+      transition: var(--transition);
+    }
+
+    .tokens-table tbody tr:last-child {
+      border-bottom: none;
+    }
+
+    .tokens-table tbody tr:hover {
+      background: var(--color-surface-light);
+    }
+
+    .tokens-table tbody td {
+      padding: 16px 20px;
+      font-size: 0.95rem;
+      color: var(--color-text);
+      white-space: nowrap;
+    }
+
+    .status-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .status-active {
+      background: rgba(34, 197, 94, 0.15);
+      color: #22c55e;
+    }
+
+    .status-expired {
+      background: rgba(239, 68, 68, 0.15);
+      color: #ef4444;
+    }
+
+    .status-limited {
+      background: rgba(212, 168, 67, 0.15);
+      color: var(--color-gold);
+    }
+
+    .claim-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 18px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      text-decoration: none;
+      background: linear-gradient(135deg, var(--color-gold), var(--color-gold-dark));
+      color: #fff;
+    }
+
+    .claim-btn:hover {
+      background: linear-gradient(135deg, var(--color-gold-light), var(--color-gold));
+      transform: translateY(-2px);
+      color: #fff;
+    }
+
+    .claim-btn.disabled {
+      background: var(--color-border);
+      color: var(--color-text-muted);
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 60px 24px;
+      color: var(--color-text-muted);
+    }
+
+    .empty-state-icon {
+      font-size: 3rem;
+      margin-bottom: 16px;
+      opacity: 0.5;
+    }
+
+    .empty-state h3 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+      color: var(--color-text);
+    }
+
+    @media (max-width: 768px) {
+      .tokens-header h1 {
+        font-size: 2rem;
+      }
+
+      .tokens-header p {
+        font-size: 1rem;
+      }
+
+      .filter-tab {
+        padding: 8px 18px;
+        font-size: 0.9rem;
+      }
+
+      .tokens-table thead th,
+      .tokens-table tbody td {
+        padding: 12px 16px;
+      }
+
+      .table-wrapper {
+        border-radius: 12px;
+        margin: 0 -8px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .tokens-header h1 {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="./index.html" class="navbar-brand">AIwork</a>
+      <button class="navbar-toggle" aria-label="切换导航">☰</button>
+      <ul class="navbar-nav">
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="./tools.html">工具</a></li>
+        <li><a href="./tokens.html">Token</a></li>
+        <li><a href="./about.html">关于</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="tokens-page">
+    <div class="container">
+      <div class="tokens-header">
+        <h1>免费Token资源</h1>
+        <p>汇总各平台免费API Token和额度信息</p>
+      </div>
+
+      <div class="filter-section">
+        <div class="filter-tabs" id="filterTabs">
+          <button class="filter-tab active" data-filter="all">全部</button>
+          <button class="filter-tab" data-filter="expiring">即将到期</button>
+          <button class="filter-tab" data-filter="longterm">长期有效</button>
+        </div>
+      </div>
+
+      <div class="tokens-table-section">
+        <div class="table-wrapper">
+          <table class="tokens-table" id="tokensTable">
+            <thead>
+              <tr>
+                <th>平台名称</th>
+                <th>Token数量</th>
+                <th>有效期</th>
+                <th>状态</th>
+                <th>领取链接</th>
+              </tr>
+            </thead>
+            <tbody id="tokensTableBody">
+            </tbody>
+          </table>
+        </div>
+        <div class="empty-state" id="emptyState" style="display: none;">
+          <div class="empty-state-icon">📭</div>
+          <h3>暂无数据</h3>
+          <p>当前筛选条件下没有Token资源</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">AIwork</div>
+      <ul class="footer-links">
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="./tools.html">工具</a></li>
+        <li><a href="./tokens.html">Token</a></li>
+        <li><a href="./about.html">关于</a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2024 AIwork. 保留所有权利。</p>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/tokens.js"></script>
+</body>
+</html>
