@@ -1,0 +1,28 @@
+name: Daily Update
+
+on:
+  schedule:
+    - cron: '0 23 * * *'  # 7:00 AM Beijing Time (UTC+8) is 23:00 UTC of previous day
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+          
+      - name: Run update script
+        run: python update_data.py
+        
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/tools.json data/tokens.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Daily update: $(date +'%Y-%m-%d')" && git push)
