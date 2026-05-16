@@ -5,120 +5,285 @@
       "name": "ChatGPT",
       "category": "聊天",
       "description": "OpenAI开发的对话AI，支持文本生成、代码编写、问答等多种任务。",
-      "tags": ["对话", "写作", "编程"],
+      "tags": [
+        "对话",
+        "写作",
+        "编程"
+      ],
       "url": "https://chat.openai.com",
       "pricing": "免费/付费",
-      "features": ["自然对话", "代码生成", "多语言支持", "插件扩展"]
+      "features": [
+        "自然对话",
+        "代码生成",
+        "多语言支持",
+        "插件扩展"
+      ]
     },
     {
       "id": "claude",
       "name": "Claude",
       "category": "聊天",
       "description": "Anthropic推出的AI助手，擅长长文本分析、推理和创意写作。",
-      "tags": ["对话", "分析", "写作"],
+      "tags": [
+        "对话",
+        "分析",
+        "写作"
+      ],
       "url": "https://claude.ai",
       "pricing": "免费/付费",
-      "features": ["超长上下文", "文档分析", "安全对齐", "多模态理解"]
+      "features": [
+        "超长上下文",
+        "文档分析",
+        "安全对齐",
+        "多模态理解"
+      ]
     },
     {
       "id": "midjourney",
       "name": "Midjourney",
       "category": "图像",
       "description": "业界领先的AI图像生成工具，通过文本描述创作高质量艺术图像。",
-      "tags": ["图像生成", "艺术创作", "设计"],
+      "tags": [
+        "图像生成",
+        "艺术创作",
+        "设计"
+      ],
       "url": "https://www.midjourney.com",
       "pricing": "付费",
-      "features": ["高质量图像", "风格多样", "Discord集成", "图像放大"]
+      "features": [
+        "高质量图像",
+        "风格多样",
+        "Discord集成",
+        "图像放大"
+      ]
     },
     {
       "id": "stable-diffusion",
       "name": "Stable Diffusion",
       "category": "图像",
       "description": "开源的AI图像生成模型，可本地部署，支持高度自定义。",
-      "tags": ["图像生成", "开源", "本地部署"],
+      "tags": [
+        "图像生成",
+        "开源",
+        "本地部署"
+      ],
       "url": "https://stability.ai",
       "pricing": "免费/付费",
-      "features": ["开源免费", "本地运行", "模型微调", "ControlNet控制"]
+      "features": [
+        "开源免费",
+        "本地运行",
+        "模型微调",
+        "ControlNet控制"
+      ]
     },
     {
       "id": "github-copilot",
       "name": "GitHub Copilot",
       "category": "代码",
       "description": "AI编程助手，实时提供代码建议和自动补全，支持多种编程语言。",
-      "tags": ["编程", "代码补全", "IDE插件"],
+      "tags": [
+        "编程",
+        "代码补全",
+        "IDE插件"
+      ],
       "url": "https://github.com/features/copilot",
       "pricing": "付费",
-      "features": ["实时代码建议", "多语言支持", "IDE集成", "聊天式编程"]
+      "features": [
+        "实时代码建议",
+        "多语言支持",
+        "IDE集成",
+        "聊天式编程"
+      ]
     },
     {
       "id": "cursor",
       "name": "Cursor",
       "category": "代码",
       "description": "基于VS Code的AI代码编辑器，内置强大的AI编程辅助功能。",
-      "tags": ["编程", "代码编辑器", "AI辅助"],
+      "tags": [
+        "编程",
+        "代码编辑器",
+        "AI辅助"
+      ],
       "url": "https://cursor.sh",
       "pricing": "免费/付费",
-      "features": ["代码生成", "智能重构", "代码解释", "自然语言编辑"]
+      "features": [
+        "代码生成",
+        "智能重构",
+        "代码解释",
+        "自然语言编辑"
+      ]
     },
     {
       "id": "notion-ai",
       "name": "Notion AI",
       "category": "写作",
       "description": "集成在Notion中的AI助手，帮助写作、总结和头脑风暴。",
-      "tags": ["写作", "笔记", "生产力"],
+      "tags": [
+        "写作",
+        "笔记",
+        "生产力"
+      ],
       "url": "https://www.notion.so/product/ai",
       "pricing": "付费",
-      "features": ["智能写作", "内容总结", "头脑风暴", "多语言翻译"]
+      "features": [
+        "智能写作",
+        "内容总结",
+        "头脑风暴",
+        "多语言翻译"
+      ]
     },
     {
       "id": "jasper",
       "name": "Jasper",
       "category": "写作",
       "description": "专业AI写作工具，专注于营销文案、博客和社交媒体内容创作。",
-      "tags": ["写作", "营销", "内容创作"],
+      "tags": [
+        "写作",
+        "营销",
+        "内容创作"
+      ],
       "url": "https://www.jasper.ai",
       "pricing": "付费",
-      "features": ["营销文案", "SEO优化", "品牌调性", "团队协作"]
+      "features": [
+        "营销文案",
+        "SEO优化",
+        "品牌调性",
+        "团队协作"
+      ]
     },
     {
       "id": "elevenlabs",
       "name": "ElevenLabs",
       "category": "音频",
       "description": "先进的AI语音合成平台，提供逼真的文本转语音和语音克隆。",
-      "tags": ["语音合成", "TTS", "语音克隆"],
+      "tags": [
+        "语音合成",
+        "TTS",
+        "语音克隆"
+      ],
       "url": "https://elevenlabs.io",
       "pricing": "免费/付费",
-      "features": ["逼真语音", "多语言支持", "语音克隆", "情感控制"]
+      "features": [
+        "逼真语音",
+        "多语言支持",
+        "语音克隆",
+        "情感控制"
+      ]
     },
     {
       "id": "suno",
       "name": "Suno",
       "category": "音频",
       "description": "AI音乐生成工具，根据文本描述创作完整歌曲和音乐。",
-      "tags": ["音乐生成", "AI作曲", "音频"],
+      "tags": [
+        "音乐生成",
+        "AI作曲",
+        "音频"
+      ],
       "url": "https://www.suno.ai",
       "pricing": "免费/付费",
-      "features": ["完整歌曲生成", "多风格支持", "歌词创作", "人声合成"]
+      "features": [
+        "完整歌曲生成",
+        "多风格支持",
+        "歌词创作",
+        "人声合成"
+      ]
     },
     {
       "id": "runway",
       "name": "Runway",
       "category": "视频",
       "description": "AI视频编辑和生成平台，支持视频转动画、绿幕抠像等功能。",
-      "tags": ["视频生成", "视频编辑", "特效"],
+      "tags": [
+        "视频生成",
+        "视频编辑",
+        "特效"
+      ],
       "url": "https://runwayml.com",
       "pricing": "免费/付费",
-      "features": ["Gen-3视频生成", "绿幕抠像", "运动笔刷", "视频转动画"]
+      "features": [
+        "Gen-3视频生成",
+        "绿幕抠像",
+        "运动笔刷",
+        "视频转动画"
+      ]
     },
     {
       "id": "sora",
       "name": "Sora",
       "category": "视频",
       "description": "OpenAI的文本生成视频模型，可根据描述生成高质量视频内容。",
-      "tags": ["视频生成", "文本转视频", "OpenAI"],
+      "tags": [
+        "视频生成",
+        "文本转视频",
+        "OpenAI"
+      ],
       "url": "https://openai.com/sora",
       "pricing": "付费",
-      "features": ["高清视频生成", "物理模拟", "长视频支持", "多镜头切换"]
+      "features": [
+        "高清视频生成",
+        "物理模拟",
+        "长视频支持",
+        "多镜头切换"
+      ]
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "category": "聊天",
+      "description": "国产大语言模型，具有强大的代码生成和推理能力，支持多语言和长文本。",
+      "tags": [
+        "对话",
+        "编程",
+        "推理"
+      ],
+      "url": "https://chat.deepseek.com",
+      "pricing": "免费/付费",
+      "features": [
+        "代码生成",
+        "数学推理",
+        "长文本处理",
+        "多语言支持"
+      ]
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity AI",
+      "category": "搜索",
+      "description": "AI驱动的搜索引擎，提供实时信息检索和问答服务，支持多种搜索模式。",
+      "tags": [
+        "搜索",
+        "问答",
+        "知识"
+      ],
+      "url": "https://www.perplexity.ai",
+      "pricing": "免费/付费",
+      "features": [
+        "实时搜索",
+        "源引用",
+        "多模态搜索",
+        "学术搜索"
+      ]
+    },
+    {
+      "id": "luma",
+      "name": "Luma AI",
+      "category": "视频",
+      "description": "3D场景和视频生成AI工具，支持从文本生成3D模型和视频内容。",
+      "tags": [
+        "3D生成",
+        "视频生成",
+        "文本到3D"
+      ],
+      "url": "https://lumalabs.ai",
+      "pricing": "免费/付费",
+      "features": [
+        "文本到3D",
+        "视频生成",
+        "3D场景",
+        "AR预览"
+      ]
     }
   ]
 }
