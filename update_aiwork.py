@@ -40,6 +40,36 @@ def update_tools():
             "url": "https://lumalabs.ai",
             "pricing": "免费/付费",
             "features": ["文本到3D", "视频生成", "3D场景", "AR预览"]
+        },
+        {
+            "id": "kling",
+            "name": "Kling AI",
+            "category": "视频",
+            "description": "快手Kling视频生成AI，支持高质量视频生成和个性化定制。",
+            "tags": ["视频生成", "文本到视频", "国产"],
+            "url": "https://kling.ai",
+            "pricing": "免费/付费",
+            "features": ["高质量视频", "多风格", "实时渲染", "长视频"]
+        },
+        {
+            "id": "v0",
+            "name": "V0.dev",
+            "category": "代码",
+            "description": "Vercel的AI前端生成工具，从描述快速构建UI组件。",
+            "tags": ["前端开发", "UI生成", "AI编程"],
+            "url": "https://v0.dev",
+            "pricing": "免费/付费",
+            "features": ["UI组件生成", "React组件", "Tailwind CSS", "实时预览"]
+        },
+        {
+            "id": "sora-text-to-video",
+            "name": "Sora-like Tools",
+            "category": "视频",
+            "description": "类似Sora的文本生成视频工具，提供多种平台的视频生成能力。",
+            "tags": ["视频生成", "文本转视频", "AI视频"],
+            "url": "https://sora.com",
+            "pricing": "免费/付费",
+            "features": ["高清视频", "长时长", "多镜头", "真实场景"]
         }
     ]
     
@@ -81,6 +111,22 @@ def update_tokens():
             "status": "active",
             "claimUrl": "https://console.groq.com",
             "tutorialUrl": "https://console.groq.com/docs"
+        },
+        {
+            "platform": "Claude.ai",
+            "tokenAmount": "免费额度",
+            "validityPeriod": "2027-06-01",
+            "status": "active",
+            "claimUrl": "https://claude.ai",
+            "tutorialUrl": "https://docs.anthropic.com"
+        },
+        {
+            "platform": "Kling AI",
+            "tokenAmount": "免费视频生成",
+            "validityPeriod": "2027-06-01",
+            "status": "active",
+            "claimUrl": "https://kling.ai",
+            "tutorialUrl": "https://kling.ai/docs"
         }
     ]
     
