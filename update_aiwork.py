@@ -3,13 +3,20 @@ import json
 import os
 import subprocess
 from datetime import datetime
+from pathlib import Path
+
+def get_project_root():
+    """获取项目根目录"""
+    return Path(__file__).parent.resolve()
 
 def update_tools():
-    tools_file = '/workspace/data/tools.json'
+    tools_file = get_project_root() / 'data' / 'tools.json'
     
     with open(tools_file, 'r', encoding='utf-8') as f:
         data = json.load(f)
     
+    # 这里可以添加获取最新AI工具的逻辑（比如爬取网站或API）
+    # 目前保持示例数据
     new_tools = [
         {
             "id": "deepseek",
@@ -40,31 +47,39 @@ def update_tools():
             "url": "https://lumalabs.ai",
             "pricing": "免费/付费",
             "features": ["文本到3D", "视频生成", "3D场景", "AR预览"]
+        },
+        {
+            "id": "ollama",
+            "name": "Ollama",
+            "category": "模型",
+            "description": "本地运行大语言模型的工具，支持多种开源模型，简单易用。",
+            "tags": ["本地部署", "开源", "LLM"],
+            "url": "https://ollama.com",
+            "pricing": "免费",
+            "features": ["本地运行", "开源模型", "命令行工具", "API支持"]
         }
     ]
     
     existing_ids = {tool['id'] for tool in data['tools']}
+    added_count = 0
     
     for tool in new_tools:
         if tool['id'] not in existing_ids:
             data['tools'].append(tool)
+            added_count += 1
     
     with open(tools_file, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     
-    print("✅ 工具数据已更新")
+    print(f"✅ 工具数据已更新，新增 {added_count} 个工具")
 
 def update_tokens():
-    tokens_file = '/workspace/data/tokens.json'
+    tokens_file = get_project_root() / 'data' / 'tokens.json'
     
     with open(tokens_file, 'r', encoding='utf-8') as f:
         data = json.load(f)
     
-    today = datetime.now().strftime('%Y-%m-%d')
-    
-    for token in data['tokens']:
-        token['validityPeriod'] = "2027-06-01"
-    
+    # 这里可以添加获取最新免费Token的逻辑
     new_tokens = [
         {
             "platform": "DeepSeek",
@@ -81,35 +96,40 @@ def update_tokens():
             "status": "active",
             "claimUrl": "https://console.groq.com",
             "tutorialUrl": "https://console.groq.com/docs"
+        },
+        {
+            "platform": "Ollama",
+            "tokenAmount": "完全免费",
+            "validityPeriod": "永久",
+            "status": "active",
+            "claimUrl": "https://ollama.com/download",
+            "tutorialUrl": "https://github.com/ollama/ollama"
         }
     ]
     
     existing_platforms = {token['platform'] for token in data['tokens']}
+    added_count = 0
     
     for token in new_tokens:
         if token['platform'] not in existing_platforms:
             data['tokens'].append(token)
+            added_count += 1
     
     with open(tokens_file, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     
-    print("✅ Token数据已更新")
-
-def git_commit_and_push():
-    try:
-        subprocess.run(['git', 'add', 'data/tools.json', 'data/tokens.json'], cwd='/workspace', check=True)
-        commit_message = f"自动更新: {datetime.now().strftime('%Y-%m-%d')} AI工具和Token信息"
-        subprocess.run(['git', 'commit', '-m', commit_message], cwd='/workspace', check=True)
-        subprocess.run(['git', 'push', 'origin', 'main'], cwd='/workspace', check=True)
-        print("✅ 更改已提交并推送到GitHub")
-    except subprocess.CalledProcessError as e:
-        print(f"❌ Git操作失败: {e}")
+    print(f"✅ Token数据已更新，新增 {added_count} 个Token")
 
 def main():
     print("🚀 开始更新AIwork数据...")
+    
+    # 更新数据
     update_tools()
     update_tokens()
-    git_commit_and_push()
+    
+    # 检查是否有变更
+    project_root = get_project_root()
+    
     print("✨ 更新完成!")
 
 if __name__ == "__main__":
