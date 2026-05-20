@@ -12,34 +12,94 @@ def update_tools():
     
     new_tools = [
         {
-            "id": "deepseek",
-            "name": "DeepSeek",
+            "id": "gemini",
+            "name": "Google Gemini",
             "category": "聊天",
-            "description": "国产大语言模型，具有强大的代码生成和推理能力，支持多语言和长文本。",
-            "tags": ["对话", "编程", "推理"],
-            "url": "https://chat.deepseek.com",
+            "description": "Google开发的多模态AI模型，支持文本、图像、视频和代码理解。",
+            "tags": ["对话", "多模态", "编程"],
+            "url": "https://gemini.google.com",
             "pricing": "免费/付费",
-            "features": ["代码生成", "数学推理", "长文本处理", "多语言支持"]
+            "features": ["多模态", "代码生成", "数学推理", "长文本处理"]
         },
         {
-            "id": "perplexity",
-            "name": "Perplexity AI",
-            "category": "搜索",
-            "description": "AI驱动的搜索引擎，提供实时信息检索和问答服务，支持多种搜索模式。",
-            "tags": ["搜索", "问答", "知识"],
-            "url": "https://www.perplexity.ai",
+            "id": "mistral",
+            "name": "Mistral AI",
+            "category": "聊天",
+            "description": "高效开源的大语言模型，提供快速响应和出色的推理能力。",
+            "tags": ["对话", "开源", "推理"],
+            "url": "https://chat.mistral.ai",
             "pricing": "免费/付费",
-            "features": ["实时搜索", "源引用", "多模态搜索", "学术搜索"]
+            "features": ["快速响应", "开源模型", "代码生成", "多语言支持"]
         },
         {
-            "id": "luma",
-            "name": "Luma AI",
+            "id": "heygen",
+            "name": "HeyGen",
             "category": "视频",
-            "description": "3D场景和视频生成AI工具，支持从文本生成3D模型和视频内容。",
-            "tags": ["3D生成", "视频生成", "文本到3D"],
-            "url": "https://lumalabs.ai",
+            "description": "AI数字人视频生成平台，支持文本驱动的虚拟人视频制作。",
+            "tags": ["数字人", "视频生成", "AIGC"],
+            "url": "https://www.heygen.com",
             "pricing": "免费/付费",
-            "features": ["文本到3D", "视频生成", "3D场景", "AR预览"]
+            "features": ["数字人视频", "文本到视频", "多语言支持", "实时渲染"]
+        },
+        {
+            "id": "d-id",
+            "name": "D-ID",
+            "category": "视频",
+            "description": "AI视频生成平台，专注于人脸动画和实时数字人创建。",
+            "tags": ["人脸动画", "数字人", "视频生成"],
+            "url": "https://d-id.com",
+            "pricing": "免费/付费",
+            "features": ["人脸动画", "文本驱动", "多语言", "实时处理"]
+        },
+        {
+            "id": "ideogram",
+            "name": "Ideogram",
+            "category": "图像",
+            "description": "AI图像生成工具，擅长文字渲染和创意设计。",
+            "tags": ["图像生成", "文字渲染", "设计"],
+            "url": "https://ideogram.ai",
+            "pricing": "免费/付费",
+            "features": ["文字渲染", "高质量图像", "创意设计", "风格多样"]
+        },
+        {
+            "id": "leptonai",
+            "name": "Lepton AI",
+            "category": "代码",
+            "description": "AI应用开发平台，提供快速部署和托管AI模型的服务。",
+            "tags": ["AI部署", "云服务", "开发"],
+            "url": "https://www.lepton.ai",
+            "pricing": "免费/付费",
+            "features": ["一键部署", "多模型支持", "API托管", "低代码开发"]
+        },
+        {
+            "id": "replicate",
+            "name": "Replicate",
+            "category": "代码",
+            "description": "开源AI模型托管和运行平台，支持各种机器学习模型。",
+            "tags": ["AI托管", "开源模型", "API"],
+            "url": "https://replicate.com",
+            "pricing": "免费/付费",
+            "features": ["模型托管", "API访问", "开源模型", "按需付费"]
+        },
+        {
+            "id": "huggingface",
+            "name": "Hugging Face",
+            "category": "代码",
+            "description": "AI模型社区和平台，提供丰富的预训练模型和工具。",
+            "tags": ["模型库", "社区", "开源"],
+            "url": "https://huggingface.co",
+            "pricing": "免费/付费",
+            "features": ["预训练模型", "开源社区", "Transformers库", "模型推理"]
+        },
+        {
+            "id": "udio",
+            "name": "Udio",
+            "category": "音频",
+            "description": "AI音乐生成工具，根据文本描述生成各种风格的音乐。",
+            "tags": ["音乐生成", "AI作曲", "音频"],
+            "url": "https://www.udio.com",
+            "pricing": "免费/付费",
+            "features": ["音乐生成", "多风格支持", "人声合成", "音乐编辑"]
         }
     ]
     
@@ -62,25 +122,46 @@ def update_tokens():
     
     today = datetime.now().strftime('%Y-%m-%d')
     
-    for token in data['tokens']:
-        token['validityPeriod'] = "2027-06-01"
-    
     new_tokens = [
         {
-            "platform": "DeepSeek",
-            "tokenAmount": "¥18",
+            "platform": "Google Gemini",
+            "tokenAmount": "免费额度",
             "validityPeriod": "2027-12-31",
             "status": "active",
-            "claimUrl": "https://platform.deepseek.com",
-            "tutorialUrl": "https://platform.deepseek.com/docs"
+            "claimUrl": "https://aistudio.google.com",
+            "tutorialUrl": "https://ai.google.dev/docs"
         },
         {
-            "platform": "Groq",
-            "tokenAmount": "免费高速API",
+            "platform": "Mistral AI",
+            "tokenAmount": "免费试用",
             "validityPeriod": "2027-06-01",
             "status": "active",
-            "claimUrl": "https://console.groq.com",
-            "tutorialUrl": "https://console.groq.com/docs"
+            "claimUrl": "https://console.mistral.ai",
+            "tutorialUrl": "https://docs.mistral.ai"
+        },
+        {
+            "platform": "Ideogram",
+            "tokenAmount": "免费生成",
+            "validityPeriod": "2027-06-01",
+            "status": "active",
+            "claimUrl": "https://ideogram.ai",
+            "tutorialUrl": "https://help.ideogram.ai"
+        },
+        {
+            "platform": "Lepton AI",
+            "tokenAmount": "免费额度",
+            "validityPeriod": "2027-06-01",
+            "status": "active",
+            "claimUrl": "https://www.lepton.ai",
+            "tutorialUrl": "https://www.lepton.ai/docs"
+        },
+        {
+            "platform": "Replicate",
+            "tokenAmount": "免费额度",
+            "validityPeriod": "2027-06-01",
+            "status": "active",
+            "claimUrl": "https://replicate.com",
+            "tutorialUrl": "https://replicate.com/docs"
         }
     ]
     
@@ -98,10 +179,19 @@ def update_tokens():
 def git_commit_and_push():
     try:
         subprocess.run(['git', 'add', 'data/tools.json', 'data/tokens.json'], cwd='/workspace', check=True)
-        commit_message = f"自动更新: {datetime.now().strftime('%Y-%m-%d')} AI工具和Token信息"
-        subprocess.run(['git', 'commit', '-m', commit_message], cwd='/workspace', check=True)
-        subprocess.run(['git', 'push', 'origin', 'main'], cwd='/workspace', check=True)
-        print("✅ 更改已提交并推送到GitHub")
+        status_result = subprocess.run(['git', 'status', '--porcelain'], cwd='/workspace', capture_output=True, text=True)
+        if status_result.stdout.strip():
+            commit_message = f"自动更新: {datetime.now().strftime('%Y-%m-%d')} AI工具和Token信息"
+            subprocess.run(['git', 'commit', '-m', commit_message], cwd='/workspace', check=True)
+            # 使用GitHub Actions提供的token进行推送
+            github_token = os.getenv('GITHUB_TOKEN')
+            if github_token:
+                # 修改remote URL以包含token
+                subprocess.run(['git', 'remote', 'set-url', 'origin', f'https://x-access-token:{github_token}@github.com/{os.getenv("GITHUB_REPOSITORY", "")}.git'], cwd='/workspace', check=True)
+            subprocess.run(['git', 'push', 'origin', 'main'], cwd='/workspace', check=True)
+            print("✅ 更改已提交并推送到GitHub")
+        else:
+            print("ℹ️ 没有新的更改需要提交")
     except subprocess.CalledProcessError as e:
         print(f"❌ Git操作失败: {e}")
 

@@ -341,6 +341,177 @@
         "多镜头",
         "真实场景"
       ]
+    },
+    {
+      "id": "gemini",
+      "name": "Google Gemini",
+      "category": "聊天",
+      "description": "Google开发的多模态AI模型，支持文本、图像、视频和代码理解。",
+      "tags": [
+        "对话",
+        "多模态",
+        "编程"
+      ],
+      "url": "https://gemini.google.com",
+      "pricing": "免费/付费",
+      "features": [
+        "多模态",
+        "代码生成",
+        "数学推理",
+        "长文本处理"
+      ]
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral AI",
+      "category": "聊天",
+      "description": "高效开源的大语言模型，提供快速响应和出色的推理能力。",
+      "tags": [
+        "对话",
+        "开源",
+        "推理"
+      ],
+      "url": "https://chat.mistral.ai",
+      "pricing": "免费/付费",
+      "features": [
+        "快速响应",
+        "开源模型",
+        "代码生成",
+        "多语言支持"
+      ]
+    },
+    {
+      "id": "heygen",
+      "name": "HeyGen",
+      "category": "视频",
+      "description": "AI数字人视频生成平台，支持文本驱动的虚拟人视频制作。",
+      "tags": [
+        "数字人",
+        "视频生成",
+        "AIGC"
+      ],
+      "url": "https://www.heygen.com",
+      "pricing": "免费/付费",
+      "features": [
+        "数字人视频",
+        "文本到视频",
+        "多语言支持",
+        "实时渲染"
+      ]
+    },
+    {
+      "id": "d-id",
+      "name": "D-ID",
+      "category": "视频",
+      "description": "AI视频生成平台，专注于人脸动画和实时数字人创建。",
+      "tags": [
+        "人脸动画",
+        "数字人",
+        "视频生成"
+      ],
+      "url": "https://d-id.com",
+      "pricing": "免费/付费",
+      "features": [
+        "人脸动画",
+        "文本驱动",
+        "多语言",
+        "实时处理"
+      ]
+    },
+    {
+      "id": "ideogram",
+      "name": "Ideogram",
+      "category": "图像",
+      "description": "AI图像生成工具，擅长文字渲染和创意设计。",
+      "tags": [
+        "图像生成",
+        "文字渲染",
+        "设计"
+      ],
+      "url": "https://ideogram.ai",
+      "pricing": "免费/付费",
+      "features": [
+        "文字渲染",
+        "高质量图像",
+        "创意设计",
+        "风格多样"
+      ]
+    },
+    {
+      "id": "leptonai",
+      "name": "Lepton AI",
+      "category": "代码",
+      "description": "AI应用开发平台，提供快速部署和托管AI模型的服务。",
+      "tags": [
+        "AI部署",
+        "云服务",
+        "开发"
+      ],
+      "url": "https://www.lepton.ai",
+      "pricing": "免费/付费",
+      "features": [
+        "一键部署",
+        "多模型支持",
+        "API托管",
+        "低代码开发"
+      ]
+    },
+    {
+      "id": "replicate",
+      "name": "Replicate",
+      "category": "代码",
+      "description": "开源AI模型托管和运行平台，支持各种机器学习模型。",
+      "tags": [
+        "AI托管",
+        "开源模型",
+        "API"
+      ],
+      "url": "https://replicate.com",
+      "pricing": "免费/付费",
+      "features": [
+        "模型托管",
+        "API访问",
+        "开源模型",
+        "按需付费"
+      ]
+    },
+    {
+      "id": "huggingface",
+      "name": "Hugging Face",
+      "category": "代码",
+      "description": "AI模型社区和平台，提供丰富的预训练模型和工具。",
+      "tags": [
+        "模型库",
+        "社区",
+        "开源"
+      ],
+      "url": "https://huggingface.co",
+      "pricing": "免费/付费",
+      "features": [
+        "预训练模型",
+        "开源社区",
+        "Transformers库",
+        "模型推理"
+      ]
+    },
+    {
+      "id": "udio",
+      "name": "Udio",
+      "category": "音频",
+      "description": "AI音乐生成工具，根据文本描述生成各种风格的音乐。",
+      "tags": [
+        "音乐生成",
+        "AI作曲",
+        "音频"
+      ],
+      "url": "https://www.udio.com",
+      "pricing": "免费/付费",
+      "features": [
+        "音乐生成",
+        "多风格支持",
+        "人声合成",
+        "音乐编辑"
+      ]
     }
   ]
 }

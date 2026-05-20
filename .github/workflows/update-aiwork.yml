@@ -1,0 +1,35 @@
+name: Update AIwork
+
+on:
+  schedule:
+    # 每天早上7点（UTC+8 时区，注意GitHub Actions使用UTC时间）
+    - cron: '0 23 * * *'  # UTC 23点 = 北京时间 7点
+  push:
+    branches: [ main ]
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+        
+    - name: Configure Git
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        
+    - name: Run update script
+      run: |
+        python update_aiwork.py
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
