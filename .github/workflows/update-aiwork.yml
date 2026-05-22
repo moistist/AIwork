@@ -1,0 +1,27 @@
+name: Update AIwork Daily
+
+on:
+  schedule:
+    - cron: '0 23 * * *'  # Runs at 07:00 UTC+8 (Beijing time) daily
+  workflow_dispatch:  # Allows manual trigger
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Run update script
+        run: python3 update_aiwork.py
+
