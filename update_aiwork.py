@@ -40,6 +40,76 @@ def update_tools():
             "url": "https://lumalabs.ai",
             "pricing": "免费/付费",
             "features": ["文本到3D", "视频生成", "3D场景", "AR预览"]
+        },
+        {
+            "id": "mistral",
+            "name": "Mistral AI",
+            "category": "聊天",
+            "description": "法国AI公司开发的高效大语言模型，以速度和性能著称。",
+            "tags": ["对话", "高效", "开源"],
+            "url": "https://mistral.ai",
+            "pricing": "免费/付费",
+            "features": ["高效推理", "开源模型", "多语言", "代码生成"]
+        },
+        {
+            "id": "gemini",
+            "name": "Google Gemini",
+            "category": "聊天",
+            "description": "Google开发的多模态AI模型，支持文本、图像、视频和音频处理。",
+            "tags": ["多模态", "对话", "Google"],
+            "url": "https://gemini.google.com",
+            "pricing": "免费/付费",
+            "features": ["多模态理解", "实时信息", "代码生成", "多语言"]
+        },
+        {
+            "id": "flux",
+            "name": "FLUX",
+            "category": "图像",
+            "description": "Black Forest Labs开发的高质量图像生成模型，具有出色的真实感和细节。",
+            "tags": ["图像生成", "高质量", "开源"],
+            "url": "https://blackforestlabs.ai",
+            "pricing": "免费/付费",
+            "features": ["超高质量", "真实感强", "精细细节", "快速生成"]
+        },
+        {
+            "id": "leptonai",
+            "name": "Lepton AI",
+            "category": "代码",
+            "description": "AI驱动的云原生开发平台，简化AI应用部署和开发流程。",
+            "tags": ["开发平台", "云原生", "AI部署"],
+            "url": "https://www.lepton.ai",
+            "pricing": "免费/付费",
+            "features": ["一键部署", "模型托管", "API开发", "自动扩展"]
+        },
+        {
+            "id": "togetherai",
+            "name": "Together AI",
+            "category": "代码",
+            "description": "AI推理和微调平台，支持多种开源模型的快速部署和定制。",
+            "tags": ["AI平台", "模型微调", "推理"],
+            "url": "https://www.together.ai",
+            "pricing": "免费/付费",
+            "features": ["快速推理", "模型微调", "多模型支持", "低延迟"]
+        },
+        {
+            "id": "ideogram",
+            "name": "Ideogram",
+            "category": "图像",
+            "description": "AI图像生成工具，特别擅长生成带有文字的图像和设计。",
+            "tags": ["图像生成", "文字生成", "设计"],
+            "url": "https://ideogram.ai",
+            "pricing": "免费/付费",
+            "features": ["文字图像", "精准生成", "多种风格", "快速迭代"]
+        },
+        {
+            "id": "hailuo",
+            "name": "HeyGen (Hailuo)",
+            "category": "视频",
+            "description": "AI视频生成平台，支持数字人、口型同步和多语言视频创作。",
+            "tags": ["视频生成", "数字人", "口型同步"],
+            "url": "https://www.heygen.com",
+            "pricing": "免费/付费",
+            "features": ["数字人主播", "口型同步", "多语言", "模板丰富"]
         }
     ]
     
@@ -81,6 +151,46 @@ def update_tokens():
             "status": "active",
             "claimUrl": "https://console.groq.com",
             "tutorialUrl": "https://console.groq.com/docs"
+        },
+        {
+            "platform": "Mistral AI",
+            "tokenAmount": "$5 免费额度",
+            "validityPeriod": "2027-12-31",
+            "status": "active",
+            "claimUrl": "https://console.mistral.ai",
+            "tutorialUrl": "https://docs.mistral.ai"
+        },
+        {
+            "platform": "Replicate",
+            "tokenAmount": "免费运行模型",
+            "validityPeriod": "2027-06-01",
+            "status": "active",
+            "claimUrl": "https://replicate.com",
+            "tutorialUrl": "https://replicate.com/docs"
+        },
+        {
+            "platform": "Together AI",
+            "tokenAmount": "$25 免费额度",
+            "validityPeriod": "2027-09-01",
+            "status": "active",
+            "claimUrl": "https://api.together.ai",
+            "tutorialUrl": "https://docs.together.ai"
+        },
+        {
+            "platform": "Fireworks AI",
+            "tokenAmount": "$30 免费额度",
+            "validityPeriod": "2027-12-31",
+            "status": "active",
+            "claimUrl": "https://fireworks.ai",
+            "tutorialUrl": "https://readme.fireworks.ai"
+        },
+        {
+            "platform": "Lepton AI",
+            "tokenAmount": "免费额度",
+            "validityPeriod": "2027-06-01",
+            "status": "active",
+            "claimUrl": "https://www.lepton.ai",
+            "tutorialUrl": "https://www.lepton.ai/docs"
         }
     ]
     
