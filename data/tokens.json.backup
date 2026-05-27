@@ -1,0 +1,84 @@
+{
+  "tokens": [
+    {
+      "platform": "OpenAI",
+      "tokenAmount": "$5",
+      "validityPeriod": "2027-06-01",
+      "status": "active",
+      "claimUrl": "https://platform.openai.com/signup",
+      "tutorialUrl": "https://platform.openai.com/docs/quickstart"
+    },
+    {
+      "platform": "Anthropic",
+      "tokenAmount": "$10",
+      "validityPeriod": "2027-06-01",
+      "status": "active",
+      "claimUrl": "https://console.anthropic.com/",
+      "tutorialUrl": "https://docs.anthropic.com/zh-CN/docs/get-started"
+    },
+    {
+      "platform": "Google AI Studio",
+      "tokenAmount": "300万 tokens",
+      "validityPeriod": "2027-06-01",
+      "status": "active",
+      "claimUrl": "https://aistudio.google.com/",
+      "tutorialUrl": "https://ai.google.dev/tutorials/rest_quickstart"
+    },
+    {
+      "platform": "Stability AI",
+      "tokenAmount": "1000积分",
+      "validityPeriod": "2027-06-01",
+      "status": "active",
+      "claimUrl": "https://platform.stability.ai/",
+      "tutorialUrl": "https://platform.stability.ai/docs/api"
+    },
+    {
+      "platform": "Cohere",
+      "tokenAmount": "$15",
+      "validityPeriod": "2027-06-01",
+      "status": "active",
+      "claimUrl": "https://cohere.com/",
+      "tutorialUrl": "https://docs.cohere.com/docs/quick-start"
+    },
+    {
+      "platform": "Hugging Face",
+      "tokenAmount": "Pro订阅7天",
+      "validityPeriod": "2027-06-01",
+      "status": "active",
+      "claimUrl": "https://huggingface.co/pricing",
+      "tutorialUrl": "https://huggingface.co/docs/hub快速入门"
+    },
+    {
+      "platform": "DeepSeek",
+      "tokenAmount": "¥18",
+      "validityPeriod": "2027-06-01",
+      "status": "active",
+      "claimUrl": "https://platform.deepseek.com",
+      "tutorialUrl": "https://platform.deepseek.com/docs"
+    },
+    {
+      "platform": "Groq",
+      "tokenAmount": "免费高速API",
+      "validityPeriod": "2027-06-01",
+      "status": "active",
+      "claimUrl": "https://console.groq.com",
+      "tutorialUrl": "https://console.groq.com/docs"
+    },
+    {
+      "platform": "Claude.ai",
+      "tokenAmount": "免费额度",
+      "validityPeriod": "2027-06-01",
+      "status": "active",
+      "claimUrl": "https://claude.ai",
+      "tutorialUrl": "https://docs.anthropic.com"
+    },
+    {
+      "platform": "Kling AI",
+      "tokenAmount": "免费视频生成",
+      "validityPeriod": "2027-06-01",
+      "status": "active",
+      "claimUrl": "https://kling.ai",
+      "tutorialUrl": "https://kling.ai/docs"
+    }
+  ]
+}

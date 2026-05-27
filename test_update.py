@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 import json
 import os
-import subprocess
-import random
 from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
 import time
+import shutil
 
 def scrape_ai_tools():
     """爬取最新的AI工具信息"""
@@ -192,6 +191,22 @@ def get_latest_tokens():
     
     return latest_tokens
 
+def backup_data():
+    """备份原始数据"""
+    if os.path.exists('/workspace/data/tools.json'):
+        shutil.copy('/workspace/data/tools.json', '/workspace/data/tools.json.backup')
+    if os.path.exists('/workspace/data/tokens.json'):
+        shutil.copy('/workspace/data/tokens.json', '/workspace/data/tokens.json.backup')
+    print("✅ 数据已备份")
+
+def restore_data():
+    """恢复原始数据"""
+    if os.path.exists('/workspace/data/tools.json.backup'):
+        shutil.copy('/workspace/data/tools.json.backup', '/workspace/data/tools.json')
+    if os.path.exists('/workspace/data/tokens.json.backup'):
+        shutil.copy('/workspace/data/tokens.json.backup', '/workspace/data/tokens.json')
+    print("✅ 数据已恢复")
+
 def update_tools():
     tools_file = '/workspace/data/tools.json'
     
@@ -212,6 +227,7 @@ def update_tools():
         json.dump(data, f, ensure_ascii=False, indent=2)
     
     print(f"✅ 工具数据已更新，新增 {added_count} 个工具")
+    return added_count
 
 def update_tokens():
     tokens_file = '/workspace/data/tokens.json'
@@ -229,7 +245,6 @@ def update_tokens():
             added_count += 1
             existing_platforms.add(token['platform'])
     
-    today = datetime.now().strftime('%Y-%m-%d')
     for token in data['tokens']:
         if 'validityPeriod' not in token or not token['validityPeriod']:
             token['validityPeriod'] = "2027-12-31"
@@ -238,24 +253,21 @@ def update_tokens():
         json.dump(data, f, ensure_ascii=False, indent=2)
     
     print(f"✅ Token数据已更新，新增 {added_count} 个Token")
-
-def git_commit_and_push():
-    try:
-        subprocess.run(['git', 'add', 'data/tools.json', 'data/tokens.json'], cwd='/workspace', check=True)
-        commit_message = f"自动更新: {datetime.now().strftime('%Y-%m-%d')} AI工具和Token信息"
-        subprocess.run(['git', 'commit', '-m', commit_message], cwd='/workspace', check=True)
-        subprocess.run(['git', 'push', 'origin', 'main'], cwd='/workspace', check=True)
-        print("✅ 更改已提交并推送到GitHub")
-    except subprocess.CalledProcessError as e:
-        print(f"❌ Git操作失败: {e}")
-        print("提示：如果这是在GitHub Actions中运行，请确保配置了正确的权限")
+    return added_count
 
 def main():
-    print("🚀 开始更新AIwork数据...")
-    update_tools()
-    update_tokens()
-    git_commit_and_push()
-    print("✨ 更新完成!")
+    print("🚀 开始测试更新AIwork数据...")
+    backup_data()
+    try:
+        tools_added = update_tools()
+        tokens_added = update_tokens()
+        print(f"\n✨ 测试成功!")
+        print(f"新增工具: {tools_added}")
+        print(f"新增Token: {tokens_added}")
+    finally:
+        print("\n正在恢复原始数据...")
+        restore_data()
+    print("✅ 测试完成!")
 
 if __name__ == "__main__":
     main()
