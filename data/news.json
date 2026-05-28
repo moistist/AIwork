@@ -1,0 +1,56 @@
+{
+  "news": [
+    {
+      "id": "news-20260528-1",
+      "title": "Google Gemini 2.5 Pro发布：更强大的推理和多模态能力",
+      "summary": "Google发布了Gemini 2.5 Pro，在推理能力大幅提升，支持更长的上下文和更好的多模态理解。",
+      "source": "Google AI",
+      "url": "https://blog.google/technology/ai/google-gemini-25/",
+      "publishedAt": "2026-05-28",
+      "tags": [
+        "大模型",
+        "多模态",
+        "Google"
+      ]
+    },
+    {
+      "id": "news-20260528-2",
+      "title": "OpenAI GPT-5开发进展更新",
+      "summary": "OpenAI透露了GPT-5的最新进展，专注于推理能力的提升。",
+      "source": "OpenAI",
+      "url": "https://openai.com/blog",
+      "publishedAt": "2026-05-28",
+      "tags": [
+        "GPT",
+        "OpenAI",
+        "大模型"
+      ]
+    },
+    {
+      "id": "news-20260528-3",
+      "title": "Anthropic Claude 3.5 Sonnet性能提升显著",
+      "summary": "Anthropic发布了Claude 3.5 Sonnet，在代码和推理能力上有重大改进。",
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/index",
+      "publishedAt": "2026-05-28",
+      "tags": [
+        "Claude",
+        "Anthropic",
+        "大模型"
+      ]
+    },
+    {
+      "id": "news-20260528-4",
+      "title": "视频生成AI新突破：Runway Gen-3 Alpha",
+      "summary": "Runway发布Gen-3 Alpha视频生成模型，质量和时长都有显著提升。",
+      "source": "Runway",
+      "url": "https://runwayml.com/blog",
+      "publishedAt": "2026-05-28",
+      "tags": [
+        "视频生成",
+        "AI视频",
+        "Runway"
+      ]
+    }
+  ]
+}

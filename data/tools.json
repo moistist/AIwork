@@ -341,6 +341,44 @@
         "多镜头",
         "真实场景"
       ]
+    },
+    {
+      "id": "deepseek-v3",
+      "name": "DeepSeek V3",
+      "category": "聊天",
+      "description": "DeepSeek最新版本，代码能力和推理能力大幅提升，支持更长的上下文。",
+      "tags": [
+        "对话",
+        "编程",
+        "推理"
+      ],
+      "url": "https://chat.deepseek.com",
+      "pricing": "免费/付费",
+      "features": [
+        "代码生成",
+        "数学推理",
+        "长文本处理",
+        "多语言支持"
+      ]
+    },
+    {
+      "id": "kling-video",
+      "name": "Kling Video",
+      "category": "视频",
+      "description": "快手Kling视频生成，支持高质量视频生成和个性化定制。",
+      "tags": [
+        "视频生成",
+        "文本到视频",
+        "国产"
+      ],
+      "url": "https://kling.ai",
+      "pricing": "免费/付费",
+      "features": [
+        "高质量视频",
+        "多风格",
+        "实时渲染",
+        "长视频"
+      ]
     }
   ]
 }
