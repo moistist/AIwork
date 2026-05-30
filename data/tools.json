@@ -341,6 +341,120 @@
         "多镜头",
         "真实场景"
       ]
+    },
+    {
+      "id": "hailuo",
+      "name": "Hailuo AI",
+      "category": "视频",
+      "description": "字节跳动推出的视频生成AI，支持文本到视频和图像到视频生成。",
+      "tags": [
+        "视频生成",
+        "文本转视频",
+        "字节跳动"
+      ],
+      "url": "https://hailuo.bytedance.com",
+      "pricing": "免费/付费",
+      "features": [
+        "高质量视频",
+        "实时渲染",
+        "多风格",
+        "长视频"
+      ]
+    },
+    {
+      "id": "moonvalley",
+      "name": "MoonValley",
+      "category": "视频",
+      "description": "文本到视频生成工具，专注于电影级质量的视频创作。",
+      "tags": [
+        "视频生成",
+        "电影级",
+        "AI视频"
+      ],
+      "url": "https://moonvalley.ai",
+      "pricing": "免费/付费",
+      "features": [
+        "电影级质量",
+        "长视频",
+        "风格控制",
+        "故事板"
+      ]
+    },
+    {
+      "id": "leap",
+      "name": "Leap AI",
+      "category": "图像",
+      "description": "AI图像生成和编辑平台，提供API和工作流自动化。",
+      "tags": [
+        "图像生成",
+        "API",
+        "编辑"
+      ],
+      "url": "https://tryleap.ai",
+      "pricing": "免费/付费",
+      "features": [
+        "图像生成",
+        "API集成",
+        "工作流",
+        "微调"
+      ]
+    },
+    {
+      "id": "coze",
+      "name": "Coze",
+      "category": "聊天",
+      "description": "字节跳动的AI Bot开发平台，快速构建智能对话应用。",
+      "tags": [
+        "Bot开发",
+        "对话系统",
+        "应用开发"
+      ],
+      "url": "https://coze.com",
+      "pricing": "免费/付费",
+      "features": [
+        "Bot创建",
+        "插件集成",
+        "工作流",
+        "多平台发布"
+      ]
+    },
+    {
+      "id": "fal",
+      "name": "Fal AI",
+      "category": "图像",
+      "description": "快速AI模型推理平台，提供各种生成模型API。",
+      "tags": [
+        "API",
+        "推理",
+        "图像生成"
+      ],
+      "url": "https://fal.ai",
+      "pricing": "免费/付费",
+      "features": [
+        "快速推理",
+        "多模型",
+        "API",
+        "计费"
+      ]
+    },
+    {
+      "id": "hyperhuman",
+      "name": "HyperHuman",
+      "category": "视频",
+      "description": "AI视频增强和生成工具，专注于人物视频制作。",
+      "tags": [
+        "视频生成",
+        "人物视频",
+        "增强"
+      ],
+      "url": "https://hyperhuman.ai",
+      "pricing": "免费/付费",
+      "features": [
+        "人物视频",
+        "视频增强",
+        "口型同步",
+        "虚拟人"
+      ]
     }
   ]
 }
