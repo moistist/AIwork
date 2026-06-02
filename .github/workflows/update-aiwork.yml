@@ -5,6 +5,9 @@ on:
     - cron: '0 23 * * *'  # Runs at 23:00 UTC (which is 07:00 UTC+8/Beijing time)
   workflow_dispatch:  # Allows manual trigger
 
+permissions:
+  contents: write
+
 jobs:
   update:
     runs-on: ubuntu-latest

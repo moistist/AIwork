@@ -12,34 +12,44 @@ def update_tools():
     
     new_tools = [
         {
-            "id": "deepseek",
-            "name": "DeepSeek",
-            "category": "聊天",
-            "description": "国产大语言模型，具有强大的代码生成和推理能力，支持多语言和长文本。",
-            "tags": ["对话", "编程", "推理"],
-            "url": "https://chat.deepseek.com",
-            "pricing": "免费/付费",
-            "features": ["代码生成", "数学推理", "长文本处理", "多语言支持"]
+            "id": "o1-preview",
+            "name": "OpenAI o1",
+            "category": "推理",
+            "description": "OpenAI的推理大模型，擅长复杂问题解决、数学和编程。",
+            "tags": ["推理", "编程", "数学"],
+            "url": "https://openai.com/index/introducing-openai-o1/",
+            "pricing": "付费",
+            "features": ["复杂推理", "思维链", "数学解题", "代码优化"]
         },
         {
-            "id": "perplexity",
-            "name": "Perplexity AI",
-            "category": "搜索",
-            "description": "AI驱动的搜索引擎，提供实时信息检索和问答服务，支持多种搜索模式。",
-            "tags": ["搜索", "问答", "知识"],
-            "url": "https://www.perplexity.ai",
+            "id": "dall-e-3",
+            "name": "DALL·E 3",
+            "category": "图像",
+            "description": "OpenAI最新图像生成模型，更高质量、更准确的文本到图像转换。",
+            "tags": ["图像生成", "OpenAI", "高质量"],
+            "url": "https://openai.com/dall-e-3",
             "pricing": "免费/付费",
-            "features": ["实时搜索", "源引用", "多模态搜索", "学术搜索"]
+            "features": ["高质量图像", "文本准确", "多风格", "详细提示"]
         },
         {
-            "id": "luma",
-            "name": "Luma AI",
-            "category": "视频",
-            "description": "3D场景和视频生成AI工具，支持从文本生成3D模型和视频内容。",
-            "tags": ["3D生成", "视频生成", "文本到3D"],
-            "url": "https://lumalabs.ai",
+            "id": "gemini-2",
+            "name": "Google Gemini 2",
+            "category": "多模态",
+            "description": "Google最新多模态大模型，支持文本、图像、视频、音频。",
+            "tags": ["多模态", "Gemini", "Google"],
+            "url": "https://gemini.google.com",
             "pricing": "免费/付费",
-            "features": ["文本到3D", "视频生成", "3D场景", "AR预览"]
+            "features": ["多模态理解", "实时搜索", "编程", "创意生成"]
+        },
+        {
+            "id": "coze",
+            "name": "字节跳动Coze",
+            "category": "应用开发",
+            "description": "一站式AI应用开发平台，快速构建聊天机器人和AI工作流。",
+            "tags": ["应用开发", "工作流", "机器人"],
+            "url": "https://www.coze.cn",
+            "pricing": "免费/付费",
+            "features": ["智能体开发", "插件集成", "工作流编排", "多平台部署"]
         }
     ]
     
@@ -63,24 +73,32 @@ def update_tokens():
     today = datetime.now().strftime('%Y-%m-%d')
     
     for token in data['tokens']:
-        token['validityPeriod'] = "2027-06-01"
+        token['validityPeriod'] = "2027-12-31"
     
     new_tokens = [
         {
-            "platform": "DeepSeek",
-            "tokenAmount": "¥18",
+            "platform": "字节跳动豆包",
+            "tokenAmount": "免费额度",
             "validityPeriod": "2027-12-31",
             "status": "active",
-            "claimUrl": "https://platform.deepseek.com",
-            "tutorialUrl": "https://platform.deepseek.com/docs"
+            "claimUrl": "https://www.doubao.com",
+            "tutorialUrl": "https://www.doubao.com/docs"
         },
         {
-            "platform": "Groq",
-            "tokenAmount": "免费高速API",
-            "validityPeriod": "2027-06-01",
+            "platform": "阿里云百炼",
+            "tokenAmount": "免费试用",
+            "validityPeriod": "2027-12-31",
             "status": "active",
-            "claimUrl": "https://console.groq.com",
-            "tutorialUrl": "https://console.groq.com/docs"
+            "claimUrl": "https://bailian.console.aliyun.com",
+            "tutorialUrl": "https://help.aliyun.com/zh/bailian"
+        },
+        {
+            "platform": "腾讯混元",
+            "tokenAmount": "免费额度",
+            "validityPeriod": "2027-12-31",
+            "status": "active",
+            "claimUrl": "https://hunyuan.tencent.com",
+            "tutorialUrl": "https://cloud.tencent.com/document/product/1729"
         }
     ]
     
@@ -95,21 +113,10 @@ def update_tokens():
     
     print("✅ Token数据已更新")
 
-def git_commit_and_push():
-    try:
-        subprocess.run(['git', 'add', 'data/tools.json', 'data/tokens.json'], cwd='/workspace', check=True)
-        commit_message = f"自动更新: {datetime.now().strftime('%Y-%m-%d')} AI工具和Token信息"
-        subprocess.run(['git', 'commit', '-m', commit_message], cwd='/workspace', check=True)
-        subprocess.run(['git', 'push', 'origin', 'main'], cwd='/workspace', check=True)
-        print("✅ 更改已提交并推送到GitHub")
-    except subprocess.CalledProcessError as e:
-        print(f"❌ Git操作失败: {e}")
-
 def main():
     print("🚀 开始更新AIwork数据...")
     update_tools()
     update_tokens()
-    git_commit_and_push()
     print("✨ 更新完成!")
 
 if __name__ == "__main__":

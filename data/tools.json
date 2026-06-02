@@ -341,6 +341,82 @@
         "多镜头",
         "真实场景"
       ]
+    },
+    {
+      "id": "o1-preview",
+      "name": "OpenAI o1",
+      "category": "推理",
+      "description": "OpenAI的推理大模型，擅长复杂问题解决、数学和编程。",
+      "tags": [
+        "推理",
+        "编程",
+        "数学"
+      ],
+      "url": "https://openai.com/index/introducing-openai-o1/",
+      "pricing": "付费",
+      "features": [
+        "复杂推理",
+        "思维链",
+        "数学解题",
+        "代码优化"
+      ]
+    },
+    {
+      "id": "dall-e-3",
+      "name": "DALL·E 3",
+      "category": "图像",
+      "description": "OpenAI最新图像生成模型，更高质量、更准确的文本到图像转换。",
+      "tags": [
+        "图像生成",
+        "OpenAI",
+        "高质量"
+      ],
+      "url": "https://openai.com/dall-e-3",
+      "pricing": "免费/付费",
+      "features": [
+        "高质量图像",
+        "文本准确",
+        "多风格",
+        "详细提示"
+      ]
+    },
+    {
+      "id": "gemini-2",
+      "name": "Google Gemini 2",
+      "category": "多模态",
+      "description": "Google最新多模态大模型，支持文本、图像、视频、音频。",
+      "tags": [
+        "多模态",
+        "Gemini",
+        "Google"
+      ],
+      "url": "https://gemini.google.com",
+      "pricing": "免费/付费",
+      "features": [
+        "多模态理解",
+        "实时搜索",
+        "编程",
+        "创意生成"
+      ]
+    },
+    {
+      "id": "coze",
+      "name": "字节跳动Coze",
+      "category": "应用开发",
+      "description": "一站式AI应用开发平台，快速构建聊天机器人和AI工作流。",
+      "tags": [
+        "应用开发",
+        "工作流",
+        "机器人"
+      ],
+      "url": "https://www.coze.cn",
+      "pricing": "免费/付费",
+      "features": [
+        "智能体开发",
+        "插件集成",
+        "工作流编排",
+        "多平台部署"
+      ]
     }
   ]
 }
