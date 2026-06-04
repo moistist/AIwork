@@ -1,4 +1,5 @@
 {
+  "lastUpdated": "2026-06-04 23:02:26",
   "tools": [
     {
       "id": "chatgpt",
@@ -340,6 +341,158 @@
         "长时长",
         "多镜头",
         "真实场景"
+      ]
+    },
+    {
+      "id": "gemini",
+      "name": "Google Gemini",
+      "category": "聊天",
+      "description": "Google推出的多模态AI模型，支持文本、图像、音频和视频理解。",
+      "tags": [
+        "对话",
+        "多模态",
+        "Google"
+      ],
+      "url": "https://gemini.google.com",
+      "pricing": "免费/付费",
+      "features": [
+        "多模态理解",
+        "代码生成",
+        "长上下文",
+        "Google集成"
+      ]
+    },
+    {
+      "id": "claude-3",
+      "name": "Claude 3",
+      "category": "聊天",
+      "description": "Anthropic最新一代AI助手，配备卓越的推理能力和超长上下文窗口。",
+      "tags": [
+        "对话",
+        "推理",
+        "长文本"
+      ],
+      "url": "https://claude.ai",
+      "pricing": "免费/付费",
+      "features": [
+        "200K上下文",
+        "多模态",
+        "编程能力",
+        "安全对齐"
+      ]
+    },
+    {
+      "id": "grok",
+      "name": "Grok",
+      "category": "聊天",
+      "description": "xAI推出的AI助手，具有实时知识获取和独特的幽默风格。",
+      "tags": [
+        "对话",
+        "实时知识",
+        "幽默"
+      ],
+      "url": "https://x.ai/grok",
+      "pricing": "免费/付费",
+      "features": [
+        "实时搜索",
+        "幽默对话",
+        "开源模型",
+        "X平台集成"
+      ]
+    },
+    {
+      "id": "stable-video",
+      "name": "Stable Video",
+      "category": "视频",
+      "description": "Stability AI推出的文本生成视频工具，支持多种风格和时长。",
+      "tags": [
+        "视频生成",
+        "文本到视频",
+        "AI视频"
+      ],
+      "url": "https://www.stability.ai/stable-video",
+      "pricing": "免费/付费",
+      "features": [
+        "4秒视频生成",
+        "多风格",
+        "图像到视频",
+        "API支持"
+      ]
+    },
+    {
+      "id": "pika",
+      "name": "Pika",
+      "category": "视频",
+      "description": "AI视频生成平台，支持图像动画化和文本生成视频功能。",
+      "tags": [
+        "视频生成",
+        "图像动画",
+        "AI视频"
+      ],
+      "url": "https://pika.art",
+      "pricing": "免费/付费",
+      "features": [
+        "图像动画化",
+        "文本生成视频",
+        "视频编辑",
+        "社区模型"
+      ]
+    },
+    {
+      "id": "kling-video",
+      "name": "Kling AI",
+      "category": "视频",
+      "description": "快手可灵AI视频生成模型，支持高质量长视频生成。",
+      "tags": [
+        "视频生成",
+        "国产",
+        "长视频"
+      ],
+      "url": "https://klingai.com",
+      "pricing": "免费/付费",
+      "features": [
+        "3秒视频生成",
+        "长视频支持",
+        "电影级效果",
+        "运动笔刷"
+      ]
+    },
+    {
+      "id": "vidu",
+      "name": "Vidu",
+      "category": "视频",
+      "description": "生数科技推出的AI视频生成工具，支持中文理解的视频创作。",
+      "tags": [
+        "视频生成",
+        "国产",
+        "中文理解"
+      ],
+      "url": "https://www.vidu.studio",
+      "pricing": "免费/付费",
+      "features": [
+        "文生视频",
+        "图生视频",
+        "角色一致性",
+        "中文优化"
+      ]
+    },
+    {
+      "id": "pixverse",
+      "name": "PixVerse",
+      "category": "视频",
+      "description": "AI视频生成平台，支持多种风格和快速视频生成。",
+      "tags": [
+        "视频生成",
+        "快速生成",
+        "多风格"
+      ],
+      "url": "https://pixverse.ai",
+      "pricing": "免费/付费",
+      "features": [
+        "快速生成",
+        "多种风格",
+        "社区分享",
+        "API支持"
       ]
     }
   ]
