@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-07 23:03:01",
+  "lastUpdated": "2026-06-08 07:00:00",
   "tools": [
     {
       "id": "chatgpt",
@@ -492,6 +492,158 @@
         "快速生成",
         "多种风格",
         "社区分享",
+        "API支持"
+      ]
+    },
+    {
+      "id": "qwen3",
+      "name": "通义千问Qwen3",
+      "category": "聊天",
+      "description": "阿里云通义千问最新一代大模型，具备卓越的推理能力和多语言支持。",
+      "tags": [
+        "对话",
+        "国产",
+        "推理"
+      ],
+      "url": "https://tongyi.aliyun.com",
+      "pricing": "免费/付费",
+      "features": [
+        "强推理",
+        "多语言",
+        "长上下文",
+        "多模态"
+      ]
+    },
+    {
+      "id": "doubao",
+      "name": "字节豆包",
+      "category": "聊天",
+      "description": "字节跳动推出的AI助手，支持对话、写作、编程等多种场景。",
+      "tags": [
+        "对话",
+        "国产",
+        "多模态"
+      ],
+      "url": "https://www.doubao.com",
+      "pricing": "免费/付费",
+      "features": [
+        "智能对话",
+        "AI搜索",
+        "创作助手",
+        "视频生成"
+      ]
+    },
+    {
+      "id": "meta-llama4",
+      "name": "Meta Llama 4",
+      "category": "聊天",
+      "description": "Meta最新开源大语言模型，支持多模态理解和强大的推理能力。",
+      "tags": [
+        "对话",
+        "开源",
+        "多模态"
+      ],
+      "url": "https://llama.meta.com",
+      "pricing": "开源免费",
+      "features": [
+        "开源",
+        "多模态",
+        "推理能力强",
+        "本地部署"
+      ]
+    },
+    {
+      "id": "sora-2",
+      "name": "Sora 2",
+      "category": "视频",
+      "description": "OpenAI第二代视频生成模型，支持更长时长和更高质量的视频生成。",
+      "tags": [
+        "视频生成",
+        "OpenAI",
+        "高质量"
+      ],
+      "url": "https://openai.com/sora",
+      "pricing": "付费",
+      "features": [
+        "更长时长",
+        "更高质量",
+        "物理模拟",
+        "多镜头"
+      ]
+    },
+    {
+      "id": "imagine-3d",
+      "name": "Imagine 3D",
+      "category": "3D",
+      "description": "AI驱动的3D模型生成工具，从文本快速创建高质量3D资产。",
+      "tags": [
+        "3D生成",
+        "文本到3D",
+        "游戏开发"
+      ],
+      "url": "https://www.imagine.art",
+      "pricing": "免费/付费",
+      "features": [
+        "文本到3D",
+        "高质量模型",
+        "多种格式",
+        "游戏资产"
+      ]
+    },
+    {
+      "id": "cursor-ai-2",
+      "name": "Cursor 2.0",
+      "category": "代码",
+      "description": "基于VS Code的AI代码编辑器升级版本，支持更强大的AI编程辅助。",
+      "tags": [
+        "编程",
+        "代码编辑器",
+        "AI辅助"
+      ],
+      "url": "https://cursor.sh",
+      "pricing": "免费/付费",
+      "features": [
+        "智能代码生成",
+        "AI搜索",
+        "项目级理解",
+        "多语言支持"
+      ]
+    },
+    {
+      "id": "perplexity-search",
+      "name": "Perplexity Pro",
+      "category": "搜索",
+      "description": "AI搜索引擎专业版，提供深度研究和实时信息检索功能。",
+      "tags": [
+        "搜索",
+        "AI问答",
+        "研究"
+      ],
+      "url": "https://www.perplexity.ai",
+      "pricing": "付费",
+      "features": [
+        "深度研究",
+        "实时搜索",
+        "源引用",
+        "学术搜索"
+      ]
+    },
+    {
+      "id": "luma-dream-machine",
+      "name": "Luma Dream Machine",
+      "category": "视频",
+      "description": "Luma AI推出的视频生成模型，支持高质量图像到视频转换。",
+      "tags": [
+        "视频生成",
+        "图像到视频",
+        "AI视频"
+      ],
+      "url": "https://lumalabs.ai/dream-machine",
+      "pricing": "免费/付费",
+      "features": [
+        "图像到视频",
+        "高质量渲染",
+        "运动控制",
         "API支持"
       ]
     }
