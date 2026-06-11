@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-06-10 23:02:30",
+  "lastUpdated": "2026-06-12 07:08:32",
   "tools": [
     {
       "id": "chatgpt",
       "name": "ChatGPT",
       "category": "聊天",
-      "description": "OpenAI开发的对话AI，支持文本生成、代码编写、问答等多种任务。",
+      "description": "OpenAI 开发的对话 AI，支持文本生成、代码编写、问答等多种任务。",
       "tags": [
         "对话",
         "写作",
@@ -24,7 +24,7 @@
       "id": "claude",
       "name": "Claude",
       "category": "聊天",
-      "description": "Anthropic推出的AI助手，擅长长文本分析、推理和创意写作。",
+      "description": "Anthropic 推出的 AI 助手，擅长长文本分析、推理和创意写作。",
       "tags": [
         "对话",
         "分析",
@@ -43,7 +43,7 @@
       "id": "midjourney",
       "name": "Midjourney",
       "category": "图像",
-      "description": "业界领先的AI图像生成工具，通过文本描述创作高质量艺术图像。",
+      "description": "业界领先的 AI 图像生成工具。",
       "tags": [
         "图像生成",
         "艺术创作",
@@ -54,7 +54,7 @@
       "features": [
         "高质量图像",
         "风格多样",
-        "Discord集成",
+        "Discord 集成",
         "图像放大"
       ]
     },
@@ -62,7 +62,7 @@
       "id": "stable-diffusion",
       "name": "Stable Diffusion",
       "category": "图像",
-      "description": "开源的AI图像生成模型，可本地部署，支持高度自定义。",
+      "description": "开源的 AI 图像生成模型，可本地部署。",
       "tags": [
         "图像生成",
         "开源",
@@ -74,25 +74,25 @@
         "开源免费",
         "本地运行",
         "模型微调",
-        "ControlNet控制"
+        "ControlNet 控制"
       ]
     },
     {
       "id": "github-copilot",
       "name": "GitHub Copilot",
       "category": "代码",
-      "description": "AI编程助手，实时提供代码建议和自动补全，支持多种编程语言。",
+      "description": "AI 编程助手，实时提供代码建议和自动补全。",
       "tags": [
         "编程",
         "代码补全",
-        "IDE插件"
+        "IDE 插件"
       ],
       "url": "https://github.com/features/copilot",
       "pricing": "付费",
       "features": [
         "实时代码建议",
         "多语言支持",
-        "IDE集成",
+        "IDE 集成",
         "聊天式编程"
       ]
     },
@@ -100,11 +100,11 @@
       "id": "cursor",
       "name": "Cursor",
       "category": "代码",
-      "description": "基于VS Code的AI代码编辑器，内置强大的AI编程辅助功能。",
+      "description": "基于 VS Code 的 AI 代码编辑器，内置强大的 AI 编程辅助功能。",
       "tags": [
         "编程",
         "代码编辑器",
-        "AI辅助"
+        "AI 辅助"
       ],
       "url": "https://cursor.sh",
       "pricing": "免费/付费",
@@ -157,7 +157,7 @@
       "id": "elevenlabs",
       "name": "ElevenLabs",
       "category": "音频",
-      "description": "先进的AI语音合成平台，提供逼真的文本转语音和语音克隆。",
+      "description": "先进的 AI 语音合成平台。",
       "tags": [
         "语音合成",
         "TTS",
@@ -176,10 +176,10 @@
       "id": "suno",
       "name": "Suno",
       "category": "音频",
-      "description": "AI音乐生成工具，根据文本描述创作完整歌曲和音乐。",
+      "description": "AI 音乐生成工具。",
       "tags": [
         "音乐生成",
-        "AI作曲",
+        "AI 作曲",
         "音频"
       ],
       "url": "https://www.suno.ai",
@@ -195,7 +195,7 @@
       "id": "runway",
       "name": "Runway",
       "category": "视频",
-      "description": "AI视频编辑和生成平台，支持视频转动画、绿幕抠像等功能。",
+      "description": "AI 视频编辑和生成平台。",
       "tags": [
         "视频生成",
         "视频编辑",
@@ -204,7 +204,7 @@
       "url": "https://runwayml.com",
       "pricing": "免费/付费",
       "features": [
-        "Gen-3视频生成",
+        "视频生成",
         "绿幕抠像",
         "运动笔刷",
         "视频转动画"
@@ -214,10 +214,10 @@
       "id": "sora",
       "name": "Sora",
       "category": "视频",
-      "description": "OpenAI的文本生成视频模型，可根据描述生成高质量视频内容。",
+      "description": "OpenAI 的文本生成视频模型。",
       "tags": [
         "视频生成",
-        "文本转视频",
+        "文本到视频",
         "OpenAI"
       ],
       "url": "https://openai.com/sora",
@@ -252,7 +252,7 @@
       "id": "perplexity",
       "name": "Perplexity AI",
       "category": "搜索",
-      "description": "AI驱动的搜索引擎，提供实时信息检索和问答服务，支持多种搜索模式。",
+      "description": "AI 驱动的搜索引擎，提供实时信息检索和问答服务。",
       "tags": [
         "搜索",
         "问答",
@@ -290,7 +290,7 @@
       "id": "kling",
       "name": "Kling AI",
       "category": "视频",
-      "description": "快手Kling视频生成AI，支持高质量视频生成和个性化定制。",
+      "description": "快手 Kling 视频生成 AI，支持高质量视频生成。",
       "tags": [
         "视频生成",
         "文本到视频",
@@ -309,17 +309,17 @@
       "id": "v0",
       "name": "V0.dev",
       "category": "代码",
-      "description": "Vercel的AI前端生成工具，从描述快速构建UI组件。",
+      "description": "Vercel 的 AI 前端生成工具，从描述快速构建 UI 组件。",
       "tags": [
         "前端开发",
-        "UI生成",
-        "AI编程"
+        "UI 生成",
+        "AI 编程"
       ],
       "url": "https://v0.dev",
       "pricing": "免费/付费",
       "features": [
-        "UI组件生成",
-        "React组件",
+        "UI 组件生成",
+        "React 组件",
         "Tailwind CSS",
         "实时预览"
       ]
@@ -347,7 +347,7 @@
       "id": "gemini",
       "name": "Google Gemini",
       "category": "聊天",
-      "description": "Google推出的多模态AI模型，支持文本、图像、音频和视频理解。",
+      "description": "Google 推出的多模态 AI 模型，支持文本、图像、音频和视频理解。",
       "tags": [
         "对话",
         "多模态",
@@ -359,7 +359,7 @@
         "多模态理解",
         "代码生成",
         "长上下文",
-        "Google集成"
+        "Google 集成"
       ]
     },
     {
@@ -385,7 +385,7 @@
       "id": "grok",
       "name": "Grok",
       "category": "聊天",
-      "description": "xAI推出的AI助手，具有实时知识获取和独特的幽默风格。",
+      "description": "xAI 推出的 AI 助手，具有实时知识获取和独特的幽默风格。",
       "tags": [
         "对话",
         "实时知识",
@@ -397,7 +397,7 @@
         "实时搜索",
         "幽默对话",
         "开源模型",
-        "X平台集成"
+        "X 平台集成"
       ]
     },
     {
@@ -423,11 +423,11 @@
       "id": "pika",
       "name": "Pika",
       "category": "视频",
-      "description": "AI视频生成平台，支持图像动画化和文本生成视频功能。",
+      "description": "AI 视频生成平台，支持图像动画化。",
       "tags": [
         "视频生成",
         "图像动画",
-        "AI视频"
+        "AI 视频"
       ],
       "url": "https://pika.art",
       "pricing": "免费/付费",
@@ -461,7 +461,7 @@
       "id": "vidu",
       "name": "Vidu",
       "category": "视频",
-      "description": "生数科技推出的AI视频生成工具，支持中文理解的视频创作。",
+      "description": "生数科技推出的 AI 视频生成工具，支持中文理解的视频创作。",
       "tags": [
         "视频生成",
         "国产",
@@ -480,7 +480,7 @@
       "id": "pixverse",
       "name": "PixVerse",
       "category": "视频",
-      "description": "AI视频生成平台，支持多种风格和快速视频生成。",
+      "description": "AI 视频生成平台，支持多种风格。",
       "tags": [
         "视频生成",
         "快速生成",
@@ -492,12 +492,12 @@
         "快速生成",
         "多种风格",
         "社区分享",
-        "API支持"
+        "API 支持"
       ]
     },
     {
       "id": "qwen3",
-      "name": "通义千问Qwen3",
+      "name": "通义千问 Qwen3",
       "category": "聊天",
       "description": "阿里云通义千问最新一代大模型，具备卓越的推理能力和多语言支持。",
       "tags": [
@@ -518,7 +518,7 @@
       "id": "doubao",
       "name": "字节豆包",
       "category": "聊天",
-      "description": "字节跳动推出的AI助手，支持对话、写作、编程等多种场景。",
+      "description": "字节跳动推出的 AI 助手，支持对话、写作、编程等多种场景。",
       "tags": [
         "对话",
         "国产",
@@ -528,7 +528,7 @@
       "pricing": "免费/付费",
       "features": [
         "智能对话",
-        "AI搜索",
+        "AI 搜索",
         "创作助手",
         "视频生成"
       ]
@@ -537,7 +537,7 @@
       "id": "meta-llama4",
       "name": "Meta Llama 4",
       "category": "聊天",
-      "description": "Meta最新开源大语言模型，支持多模态理解和强大的推理能力。",
+      "description": "Meta 最新开源大语言模型。",
       "tags": [
         "对话",
         "开源",
@@ -575,16 +575,16 @@
       "id": "imagine-3d",
       "name": "Imagine 3D",
       "category": "3D",
-      "description": "AI驱动的3D模型生成工具，从文本快速创建高质量3D资产。",
+      "description": "AI 驱动的 3D 模型生成工具。",
       "tags": [
-        "3D生成",
-        "文本到3D",
+        "3D 生成",
+        "文本到 3D",
         "游戏开发"
       ],
       "url": "https://www.imagine.art",
       "pricing": "免费/付费",
       "features": [
-        "文本到3D",
+        "文本到 3D",
         "高质量模型",
         "多种格式",
         "游戏资产"
@@ -632,11 +632,11 @@
       "id": "luma-dream-machine",
       "name": "Luma Dream Machine",
       "category": "视频",
-      "description": "Luma AI推出的视频生成模型，支持高质量图像到视频转换。",
+      "description": "Luma AI 推出的视频生成模型，支持高质量图像到视频转换。",
       "tags": [
         "视频生成",
         "图像到视频",
-        "AI视频"
+        "AI 视频"
       ],
       "url": "https://lumalabs.ai/dream-machine",
       "pricing": "免费/付费",
@@ -644,7 +644,7 @@
         "图像到视频",
         "高质量渲染",
         "运动控制",
-        "API支持"
+        "API 支持"
       ]
     }
   ]
