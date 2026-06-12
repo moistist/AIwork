@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-10 23:02:30",
+  "lastUpdated": "2026-06-12 23:10:50",
   "tools": [
     {
       "id": "chatgpt",
@@ -645,6 +645,374 @@
         "高质量渲染",
         "运动控制",
         "API支持"
+      ]
+    },
+    {
+      "id": "the-download-reprogramming-aging-and-the-hidden-sense-of-int",
+      "name": "The Download: “reprogramming” aging, and the hidden sense of interoception",
+      "category": "聊天",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Why “reprogramming” is the buzziest approach to re",
+      "tags": [
+        "聊天"
+      ],
+      "url": "https://www.technologyreview.com/2026/06/12/1138899/the-download-reprogramming-reverse-aging-interoception/",
+      "pricing": "免费/付费",
+      "features": [
+        "The Download: “reprogramming” aging, and the hidde",
+        "来自RSS/JSON聚合",
+        "实时更新"
+      ]
+    },
+    {
+      "id": "why-reprogramming-is-the-buzziest-approach-to-reversing-agin",
+      "name": "Why “reprogramming” is the buzziest approach to reversing aging right now",
+      "category": "聊天",
+      "description": "Earlier this week, Life Biosciences, a biotech company focused on reversing age-related diseases, announced that it had dosed its first volunteer. A person with glaucoma has had an experimental treatm",
+      "tags": [
+        "聊天"
+      ],
+      "url": "https://www.technologyreview.com/2026/06/12/1138829/reprogramming-buzziest-approach-reversing-aging-right-now/",
+      "pricing": "免费/付费",
+      "features": [
+        "Why “reprogramming” is the buzziest approach to re",
+        "来自RSS/JSON聚合",
+        "实时更新"
+      ]
+    },
+    {
+      "id": "inside-interoception-the-hidden-sense-of-how-you-feel-inside",
+      "name": "Inside interoception: The hidden sense of how you feel inside",
+      "category": "写作",
+      "description": "MIT Technology Review&#160;Explains: Let our writers untangle the complex, messy world of science and technology to help you understand what’s coming next.&#160;You can read more from the series here.",
+      "tags": [
+        "写作"
+      ],
+      "url": "https://www.technologyreview.com/2026/06/12/1138833/inside-interoception-brain-body/",
+      "pricing": "免费/付费",
+      "features": [
+        "Inside interoception: The hidden sense of how you ",
+        "来自RSS/JSON聚合",
+        "实时更新"
+      ]
+    },
+    {
+      "id": "the-download-soccer-s-data-renaissance-and-china-s-big-nucle",
+      "name": "The Download: soccer’s data renaissance and China’s big nuclear plans",
+      "category": "聊天",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Inside soccer’s data renaissance Imagine tuning in",
+      "tags": [
+        "聊天"
+      ],
+      "url": "https://www.technologyreview.com/2026/06/11/1138809/the-download-soccer-football-data-analytics-china-nuclear-power/",
+      "pricing": "免费/付费",
+      "features": [
+        "The Download: soccer’s data renaissance and China’",
+        "来自RSS/JSON聚合",
+        "实时更新"
+      ]
+    },
+    {
+      "id": "google-deepmind-is-worried-about-what-happens-when-millions-",
+      "name": "Google DeepMind is worried about what happens when millions of agents start to i",
+      "category": "搜索",
+      "description": "Google DeepMind is funding research into the potential dangers of situations where millions of different AI agents interact with each other online. According to Rohin Shah, who directs the company’s A",
+      "tags": [
+        "搜索"
+      ],
+      "url": "https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact/",
+      "pricing": "免费/付费",
+      "features": [
+        "Google DeepMind is worried about what happens when",
+        "来自RSS/JSON聚合",
+        "实时更新"
+      ]
+    },
+    {
+      "id": "inside-soccer-s-data-renaissance",
+      "name": "Inside soccer’s data renaissance",
+      "category": "聊天",
+      "description": "Imagine tuning in to the opening kickoff of a World Cup match and seeing a player intentionally send the ball all the way down the pitch and right out of bounds on the opponent’s end. Casual fans migh",
+      "tags": [
+        "聊天"
+      ],
+      "url": "https://www.technologyreview.com/2026/06/11/1138506/inside-soccer-data-renaissance-jesse-davis/",
+      "pricing": "免费/付费",
+      "features": [
+        "Inside soccer’s data renaissance",
+        "来自RSS/JSON聚合",
+        "实时更新"
+      ]
+    },
+    {
+      "id": "the-download-the-steroid-olympics-and-a-safer-mythos",
+      "name": "The Download: the “steroid olympics” and a safer Mythos",
+      "category": "聊天",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. The “steroid olympics” were a circus—and a window ",
+      "tags": [
+        "聊天"
+      ],
+      "url": "https://www.technologyreview.com/2026/06/10/1138739/the-download-steroid-olympics-enhanced-games-anthropic-mythos/",
+      "pricing": "免费/付费",
+      "features": [
+        "The Download: the “steroid olympics” and a safer M",
+        "来自RSS/JSON聚合",
+        "实时更新"
+      ]
+    },
+    {
+      "id": "the-code-works-what-could-possibly-go-wrong",
+      "name": "The Code Works. What Could Possibly Go Wrong?",
+      "category": "代码",
+      "description": "Would you treat a serious illness without seeing a doctor, relying only on whatever your favorite AI...",
+      "tags": [
+        "代码"
+      ],
+      "url": "https://dev.to/sylwia-lask/the-code-works-what-could-possibly-go-wrong-5hbm",
+      "pricing": "免费/付费",
+      "features": [
+        "The Code Works. What Could Possibly Go Wrong?",
+        "来自RSS/JSON聚合",
+        "实时更新"
+      ]
+    },
+    {
+      "id": "your-vibe-coded-app-works-is-it-any-good",
+      "name": "Your Vibe-Coded App Works. Is It Any Good?",
+      "category": "代码",
+      "description": "TL;DR - Getting an app to run is now the easy part. AI is very good at producing something that...",
+      "tags": [
+        "代码"
+      ],
+      "url": "https://dev.to/mlh/your-vibe-coded-app-works-is-it-any-good-28co",
+      "pricing": "免费/付费",
+      "features": [
+        "Your Vibe-Coded App Works. Is It Any Good?",
+        "来自RSS/JSON聚合",
+        "实时更新"
+      ]
+    },
+    {
+      "id": "i-switched-to-the-agent-toolkit-for-aws-here-s-why",
+      "name": "I Switched to the Agent Toolkit for AWS. Here's Why.",
+      "category": "聊天",
+      "description": "A hands-on look at the official Agent Toolkit for AWS: what it is, why I switched from the old MCP server, and how to set it up.",
+      "tags": [
+        "聊天"
+      ],
+      "url": "https://dev.to/aws/i-switched-to-the-agent-toolkit-for-aws-heres-why-5hf",
+      "pricing": "免费/付费",
+      "features": [
+        "I Switched to the Agent Toolkit for AWS. Here's Wh",
+        "来自RSS/JSON聚合",
+        "实时更新"
+      ]
+    },
+    {
+      "id": "the-remote-already-exists-what-click-got-right-about-agentic",
+      "name": "The Remote Already Exists: What \"Click\" Got Right About Agentic AI",
+      "category": "聊天",
+      "description": "I rewatched \"Click\" recently, the 2006 Adam Sandler movie that everyone remembers as a dumb comedy...",
+      "tags": [
+        "聊天"
+      ],
+      "url": "https://dev.to/alexmercedcoder/the-remote-already-exists-what-click-got-right-about-agentic-ai-1d97",
+      "pricing": "免费/付费",
+      "features": [
+        "The Remote Already Exists: What \"Click\" Got Right ",
+        "来自RSS/JSON聚合",
+        "实时更新"
+      ]
+    },
+    {
+      "id": "building-knowledge-graphs-with-gemini",
+      "name": "Building Knowledge Graphs with Gemini",
+      "category": "聊天",
+      "description": "✨ Overview   In this exploration, we'll see how to turn raw, unstructured documents into...",
+      "tags": [
+        "聊天"
+      ],
+      "url": "https://dev.to/googleai/building-knowledge-graphs-with-gemini-3ail",
+      "pricing": "免费/付费",
+      "features": [
+        "Building Knowledge Graphs with Gemini",
+        "来自RSS/JSON聚合",
+        "实时更新"
+      ]
+    },
+    {
+      "id": "flutter-agent-skills-how-to-make-your-ai-agent-actually-good",
+      "name": "Flutter Agent Skills: How to Make Your AI Agent Actually Good at Flutter",
+      "category": "写作",
+      "description": "TL;DR: Your AI coding assistant is a generalist. It writes Flutter that looks right but quietly...",
+      "tags": [
+        "写作"
+      ],
+      "url": "https://dev.to/sayed_ali_alkamel/flutter-agent-skills-how-to-make-your-ai-agent-actually-good-at-flutter-3831",
+      "pricing": "免费/付费",
+      "features": [
+        "Flutter Agent Skills: How to Make Your AI Agent Ac",
+        "来自RSS/JSON聚合",
+        "实时更新"
+      ]
+    },
+    {
+      "id": "every-step-was-allowed-the-sequence-was-the-attack-ai-memory",
+      "name": "Every Step Was Allowed. The Sequence Was the Attack. (AI Memory Judgment, CLAIM-",
+      "category": "聊天",
+      "description": "Earlier this week I published CLAIM-29: permission is not purpose. An instruction can be fully...",
+      "tags": [
+        "聊天"
+      ],
+      "url": "https://dev.to/zep1997/every-step-was-allowed-the-sequence-was-the-attack-ai-memory-judgment-claim-30-4ehc",
+      "pricing": "免费/付费",
+      "features": [
+        "Every Step Was Allowed. The Sequence Was the Attac",
+        "来自RSS/JSON聚合",
+        "实时更新"
+      ]
+    },
+    {
+      "id": "i-lead-ai-agents-every-day-here-are-5-shifts-no-standard-tel",
+      "name": "I Lead AI Agents Every Day - Here Are 5 Shifts No Standard Tells You How to Make",
+      "category": "聊天",
+      "description": "A Google DeepMind safety lead said this week that they're putting $10M behind multi-agent safety...",
+      "tags": [
+        "聊天"
+      ],
+      "url": "https://dev.to/itskondrat/i-lead-ai-agents-every-day-here-are-5-shifts-no-standard-tells-you-how-to-make-1pg4",
+      "pricing": "免费/付费",
+      "features": [
+        "I Lead AI Agents Every Day - Here Are 5 Shifts No ",
+        "来自RSS/JSON聚合",
+        "实时更新"
+      ]
+    },
+    {
+      "id": "aws-agent-toolkit-evita-que-tu-agente-de-ia-alucine-apis",
+      "name": "AWS Agent Toolkit: Evita que tu Agente de IA Alucine APIs",
+      "category": "聊天",
+      "description": "Tu agente de programación con IA alucina APIs de AWS porque está adivinando con datos de...",
+      "tags": [
+        "聊天"
+      ],
+      "url": "https://dev.to/aws-espanol/aws-agent-toolkit-evita-que-tu-agente-de-ia-alucine-apis-3h5c",
+      "pricing": "免费/付费",
+      "features": [
+        "AWS Agent Toolkit: Evita que tu Agente de IA Aluci",
+        "来自RSS/JSON聚合",
+        "实时更新"
+      ]
+    },
+    {
+      "id": "how-to-give-your-ai-agent-a-budget-before-it-gives-itself-on",
+      "name": "How to Give Your AI Agent a Budget (Before It Gives Itself One)",
+      "category": "聊天",
+      "description": "An AI agent running on behalf of a developer named JertLinc recently joined a hobbyist networking...",
+      "tags": [
+        "聊天"
+      ],
+      "url": "https://dev.to/tonyspiro/how-to-give-your-ai-agent-a-budget-before-it-gives-itself-one-52ia",
+      "pricing": "免费/付费",
+      "features": [
+        "How to Give Your AI Agent a Budget (Before It Give",
+        "来自RSS/JSON聚合",
+        "实时更新"
+      ]
+    },
+    {
+      "id": "qa-experiments-that-actually-matter-browser-automation-ai-ag",
+      "name": "QA Experiments That Actually Matter: Browser Automation, AI Agents, and CI Reali",
+      "category": "聊天",
+      "description": "Most testing advice sounds cleaner than real testing work.  In the clean version, you pick a tool,...",
+      "tags": [
+        "聊天"
+      ],
+      "url": "https://dev.to/randomsquirrel802/qa-experiments-that-actually-matter-browser-automation-ai-agents-and-ci-reality-1m8j",
+      "pricing": "免费/付费",
+      "features": [
+        "QA Experiments That Actually Matter: Browser Autom",
+        "来自RSS/JSON聚合",
+        "实时更新"
+      ]
+    },
+    {
+      "id": "fable-5-dropped-and-i-m-suddenly-a-lot-more-paranoid-about-m",
+      "name": "Fable 5 dropped and I'm suddenly a lot more paranoid about my VS Code extensions",
+      "category": "代码",
+      "description": "Three days ago, Anthropic released Claude Fable 5 — their first publicly available Mythos-class...",
+      "tags": [
+        "代码"
+      ],
+      "url": "https://dev.to/ishaan_agrawal/fable-5-dropped-and-im-suddenly-a-lot-more-paranoid-about-my-vs-code-extensions-iin",
+      "pricing": "免费/付费",
+      "features": [
+        "Fable 5 dropped and I'm suddenly a lot more parano",
+        "来自RSS/JSON聚合",
+        "实时更新"
+      ]
+    },
+    {
+      "id": "ai-evals-part-2-error-analysis-the-unglamorous-superpower-be",
+      "name": "AI Evals, Part 2: Error Analysis The Unglamorous Superpower Behind Good Evals",
+      "category": "聊天",
+      "description": "Before you build a single metric, you have to read your AIs failures and name them. Error analysis  the highest-leverage, most-skipped step in evals  on a live .NET product.",
+      "tags": [
+        "聊天"
+      ],
+      "url": "https://dev.to/mrviduus/ai-evals-part-2-error-analysis-the-unglamorous-superpower-behind-good-evals-4k2h",
+      "pricing": "免费/付费",
+      "features": [
+        "AI Evals, Part 2: Error Analysis The Unglamorous S",
+        "来自RSS/JSON聚合",
+        "实时更新"
+      ]
+    },
+    {
+      "id": "how-to-write-a-flutter-agent-skill-that-actually-works-the-2",
+      "name": "How to Write a Flutter Agent Skill That Actually Works: The 2026 Recipe",
+      "category": "写作",
+      "description": "TL;DR A great agent skill is not a pile of documentation. It is a tightly scoped SKILL.md with a...",
+      "tags": [
+        "写作"
+      ],
+      "url": "https://dev.to/sayed_ali_alkamel/how-to-write-a-flutter-agent-skill-that-actually-works-the-2026-recipe-2joi",
+      "pricing": "免费/付费",
+      "features": [
+        "How to Write a Flutter Agent Skill That Actually W",
+        "来自RSS/JSON聚合",
+        "实时更新"
+      ]
+    },
+    {
+      "id": "the-claude-p-playbook-for-june-15-rebuilding-your-ai-workflo",
+      "name": "The claude -p playbook for June 15 — rebuilding your AI workflows inside interac",
+      "category": "聊天",
+      "description": "On June 15, claude -p and the Agent SDK leave your Claude subscription. Here's how to move much of that work back into interactive sessions — four tested recipes.",
+      "tags": [
+        "聊天"
+      ],
+      "url": "https://dev.to/fujibee/the-claude-p-playbook-for-june-15-rebuilding-your-ai-workflows-inside-interactive-sessions-3p41",
+      "pricing": "免费/付费",
+      "features": [
+        "The claude -p playbook for June 15 — rebuilding yo",
+        "来自RSS/JSON聚合",
+        "实时更新"
+      ]
+    },
+    {
+      "id": "the-agent-gets-the-api-key-you-get-the-guinea-pig-seat",
+      "name": "The Agent Gets the API Key. You Get the Guinea Pig Seat.",
+      "category": "聊天",
+      "description": "A friend texted me this week, and within a year someone you know is going to send you the same...",
+      "tags": [
+        "聊天"
+      ],
+      "url": "https://dev.to/zep1997/the-agent-gets-the-api-key-you-get-the-guinea-pig-seat-3mii",
+      "pricing": "免费/付费",
+      "features": [
+        "The Agent Gets the API Key. You Get the Guinea Pig",
+        "来自RSS/JSON聚合",
+        "实时更新"
       ]
     }
   ]
