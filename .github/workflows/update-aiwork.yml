@@ -2,12 +2,18 @@ name: Update AIwork Data Daily
 
 on:
   schedule:
-    - cron: '0 23 * * *'  # Runs at 23:00 UTC (which is 07:00 UTC+8/Beijing time)
-  workflow_dispatch:  # Allows manual trigger
+    # 北京时间 (UTC+8) 早上 7:00 = UTC 23:00（前一天）
+    - cron: '0 23 * * *'
+  workflow_dispatch:  # 允许手动触发
+
+permissions:
+  contents: write  # 允许推送代码到仓库以触发 GitHub Pages 部署
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -17,16 +23,22 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Run update script
+      - name: Run data update script
         run: python update_aiwork.py
+        env:
+          TZ: Asia/Shanghai
 
-      - name: Configure Git
+      - name: Configure Git identity
         run: |
           git config user.name "AIwork Bot"
-          git config user.email "aiwork@example.com"
+          git config user.email "aiwork-bot@users.noreply.github.com"
 
       - name: Commit and push changes
         run: |
+          if git diff --quiet data/; then
+            echo "No changes detected in data/ - skipping commit"
+            exit 0
+          fi
           git add data/tools.json data/tokens.json
-          git commit -m "自动更新: $(date +'%Y-%m-%d') AI工具和Token信息" || echo "No changes to commit"
-          git push || echo "No changes to push"
+          git commit -m "自动更新: $(date +'%Y-%m-%d') AI工具和Token信息 [skip ci]" || echo "No changes"
+          git push
