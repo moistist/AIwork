@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-10 23:02:30",
+  "lastUpdated": "2026-06-13 23:08:19",
   "tools": [
     {
       "id": "chatgpt",
@@ -646,6 +646,179 @@
         "运动控制",
         "API支持"
       ]
+    },
+    {
+      "id": "searchgpt",
+      "name": "SearchGPT",
+      "category": "搜索",
+      "description": "OpenAI 推出的实时 AI 搜索引擎，提供透明引用和高质量答案。",
+      "tags": [
+        "搜索",
+        "实时",
+        "引用"
+      ],
+      "url": "https://searchgpt.ai",
+      "pricing": "免费/付费",
+      "features": [
+        "实时搜索",
+        "源引用",
+        "深度研究",
+        "对话模式"
+      ]
+    },
+    {
+      "id": "grok-3",
+      "name": "Grok 3",
+      "category": "聊天",
+      "description": "xAI 第三代大模型，支持实时 X 平台数据检索和深度推理。",
+      "tags": [
+        "对话",
+        "实时搜索",
+        "推理"
+      ],
+      "url": "https://x.ai",
+      "pricing": "免费/付费",
+      "features": [
+        "实时搜索",
+        "高速推理",
+        "X 平台集成",
+        "多模态"
+      ]
+    },
+    {
+      "id": "gemini-2-5",
+      "name": "Gemini 2.5",
+      "category": "聊天",
+      "description": "Google 新一代多模态大模型，具备超长上下文和代码生成能力。",
+      "tags": [
+        "对话",
+        "多模态",
+        "代码",
+        "Google"
+      ],
+      "url": "https://gemini.google.com",
+      "pricing": "免费/付费",
+      "features": [
+        "1M 上下文",
+        "多模态理解",
+        "代码生成",
+        "Agent 能力"
+      ]
+    },
+    {
+      "id": "veo-3",
+      "name": "Google Veo 3",
+      "category": "视频",
+      "description": "Google 最新 AI 视频生成模型，支持高质量长视频和可编辑时间轴。",
+      "tags": [
+        "视频生成",
+        "国产",
+        "高质量"
+      ],
+      "url": "https://deepmind.google/technologies/veo/",
+      "pricing": "免费/付费",
+      "features": [
+        "长视频生成",
+        "高质量",
+        "可编辑时间轴",
+        "多模态"
+      ]
+    },
+    {
+      "id": "cursor-ai",
+      "name": "Cursor",
+      "category": "代码",
+      "description": "基于 VS Code 的 AI 代码编辑器，具备强大的代码理解和重构能力。",
+      "tags": [
+        "编程",
+        "AI 代码编辑器",
+        "代码补全"
+      ],
+      "url": "https://cursor.sh",
+      "pricing": "免费/付费",
+      "features": [
+        "AI 代码生成",
+        "智能重构",
+        "项目级理解",
+        "智能 Tab"
+      ]
+    },
+    {
+      "id": "claude-4",
+      "name": "Claude 4",
+      "category": "聊天",
+      "description": "Anthropic 最新一代 AI 助手，具备卓越的推理能力和安全对齐。",
+      "tags": [
+        "对话",
+        "推理",
+        "安全对齐"
+      ],
+      "url": "https://claude.ai",
+      "pricing": "免费/付费",
+      "features": [
+        "高级推理",
+        "超长上下文",
+        "多模态",
+        "企业安全"
+      ]
+    },
+    {
+      "id": "qwen-3",
+      "name": "通义千问 Qwen3",
+      "category": "聊天",
+      "description": "阿里云通义千问最新一代开源大模型，推理能力媲美顶级闭源模型。",
+      "tags": [
+        "对话",
+        "开源",
+        "推理"
+      ],
+      "url": "https://tongyi.aliyun.com",
+      "pricing": "免费/付费",
+      "features": [
+        "强推理",
+        "开源免费",
+        "长上下文",
+        "多语言"
+      ]
+    },
+    {
+      "id": "perplexity-sonar",
+      "name": "Perplexity Sonar",
+      "category": "搜索",
+      "description": "Perplexity 新一代实时搜索 AI 模型，提供更深度的研究辅助。",
+      "tags": [
+        "搜索",
+        "AI 问答",
+        "研究"
+      ],
+      "url": "https://www.perplexity.ai",
+      "pricing": "免费/付费",
+      "features": [
+        "深度研究",
+        "实时信息",
+        "源引用",
+        "学术搜索"
+      ]
+    },
+    {
+      "id": "llama-4",
+      "name": "Meta Llama 4",
+      "category": "聊天",
+      "description": "Meta 最新开源多模态大模型，具备强大推理和本地部署能力。",
+      "tags": [
+        "对话",
+        "开源",
+        "多模态"
+      ],
+      "url": "https://llama.meta.com",
+      "pricing": "开源免费",
+      "features": [
+        "开源",
+        "多模态",
+        "强推理",
+        "本地部署"
+      ]
     }
-  ]
+  ],
+  "totalCount": 43
 }
