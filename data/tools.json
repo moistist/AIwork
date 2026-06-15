@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-14 23:02:17",
+  "lastUpdated": "2026-06-15 23:03:26",
   "tools": [
     {
       "id": "chatgpt",
@@ -818,7 +818,122 @@
         "强推理",
         "本地部署"
       ]
+    },
+    {
+      "id": "deepseek-v4",
+      "name": "DeepSeek V4",
+      "category": "聊天",
+      "description": "国产大语言模型，具有强大的代码生成和推理能力，支持多语言和长文本。",
+      "tags": [
+        "对话",
+        "编程",
+        "推理"
+      ],
+      "url": "https://chat.deepseek.com",
+      "pricing": "免费/付费",
+      "features": [
+        "代码生成",
+        "数学推理",
+        "长文本处理",
+        "多语言支持"
+      ]
+    },
+    {
+      "id": "groq",
+      "name": "Groq",
+      "category": "API",
+      "description": "极速AI推理平台，Llama 3.3 70B可达300-700 token/秒。",
+      "tags": [
+        "API",
+        "极速推理",
+        "开源模型"
+      ],
+      "url": "https://console.groq.com",
+      "pricing": "免费",
+      "features": [
+        "超快推理",
+        "LLaMA 3.3 70B",
+        "每分钟30次请求",
+        "无需信用卡"
+      ]
+    },
+    {
+      "id": "dall-e",
+      "name": "DALL-E",
+      "category": "图像",
+      "description": "OpenAI的AI图像生成模型，支持高质量图像创作和编辑。",
+      "tags": [
+        "图像生成",
+        "OpenAI",
+        "创意"
+      ],
+      "url": "https://openai.com/dall-e-3",
+      "pricing": "付费",
+      "features": [
+        "高质量图像",
+        "图像编辑",
+        "风格多样",
+        "CLIP引导"
+      ]
+    },
+    {
+      "id": "meta-llama-4",
+      "name": "Meta Llama 4",
+      "category": "聊天",
+      "description": "Meta最新开源大语言模型，支持多模态理解和强大的推理能力。",
+      "tags": [
+        "对话",
+        "开源",
+        "多模态"
+      ],
+      "url": "https://llama.meta.com",
+      "pricing": "开源免费",
+      "features": [
+        "开源",
+        "多模态",
+        "推理能力强",
+        "本地部署"
+      ]
+    },
+    {
+      "id": "agnes-ai",
+      "name": "Agnes AI",
+      "category": "多模态",
+      "description": "新加坡Sapiens AI实验室出品的文本+图像+视频三合一免费AI平台。",
+      "tags": [
+        "文本",
+        "图像",
+        "视频",
+        "API"
+      ],
+      "url": "https://platform.agnes-ai.com",
+      "pricing": "免费",
+      "features": [
+        "Agnes-2.0-Flash文本",
+        "Agnes-Image-2.1图像",
+        "Agnes-Video视频",
+        "OpenAI兼容"
+      ]
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral AI",
+      "category": "API",
+      "description": "法国AI公司提供的API平台，Mistral Small 3.1每月10亿token免费。",
+      "tags": [
+        "API",
+        "开源",
+        "高速"
+      ],
+      "url": "https://console.mistral.ai",
+      "pricing": "免费",
+      "features": [
+        "10亿tokens/月",
+        "开源模型",
+        "欧洲合规",
+        "API友好"
+      ]
     }
   ],
-  "totalCount": 43
+  "totalCount": 49
 }
