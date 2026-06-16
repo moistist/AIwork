@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-15 23:03:26",
+  "lastUpdated": "2026-06-16 23:09:01",
   "tools": [
     {
       "id": "chatgpt",
@@ -933,7 +933,46 @@
         "欧洲合规",
         "API友好"
       ]
+    },
+    {
+      "id": "gemini-2-5-pro",
+      "name": "Google Gemini 2.5 Pro",
+      "category": "聊天",
+      "description": "Google 新一代多模态大模型，支持 1M 超长上下文与代码生成。",
+      "tags": [
+        "对话",
+        "多模态",
+        "代码",
+        "Google"
+      ],
+      "url": "https://gemini.google.com",
+      "pricing": "免费/付费",
+      "features": [
+        "1M 上下文",
+        "多模态理解",
+        "代码生成",
+        "Agent 能力"
+      ]
+    },
+    {
+      "id": "mistral-api",
+      "name": "Mistral AI",
+      "category": "API",
+      "description": "法国 AI 公司提供的 API 平台，Mistral Small 3.1 每月 10 亿 token 免费。",
+      "tags": [
+        "API",
+        "开源",
+        "高速"
+      ],
+      "url": "https://console.mistral.ai",
+      "pricing": "免费",
+      "features": [
+        "10亿tokens/月",
+        "开源模型",
+        "欧洲合规",
+        "API友好"
+      ]
     }
   ],
-  "totalCount": 49
+  "totalCount": 51
 }
