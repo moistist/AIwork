@@ -205,6 +205,10 @@ def update_tools():
     with open(tools_file, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
+    # 确保 data 包含必要字段
+    if 'tools' not in data or not isinstance(data['tools'], list):
+        data['tools'] = []
+
     new_tools = get_aitools_news()
     existing_ids = {tool['id'] for tool in data['tools']}
 
@@ -214,13 +218,14 @@ def update_tools():
             data['tools'].append(tool)
             added_count += 1
 
-    # 更新lastUpdated字段
+    # 动态更新 totalCount 和 lastUpdated 字段
+    data['totalCount'] = len(data['tools'])
     data['lastUpdated'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
     with open(tools_file, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    print(f"✅ 工具数据已更新，新增 {added_count} 个工具")
+    print(f"✅ 工具数据已更新，新增 {added_count} 个工具，总计 {data['totalCount']} 个")
 
 def update_tokens():
     """更新Token数据"""
@@ -228,6 +233,10 @@ def update_tokens():
 
     with open(tokens_file, 'r', encoding='utf-8') as f:
         data = json.load(f)
+
+    # 确保 data 包含必要字段
+    if 'tokens' not in data or not isinstance(data['tokens'], list):
+        data['tokens'] = []
 
     new_tokens = get_freetokens()
     existing_platforms = {token['platform'] for token in data['tokens']}
@@ -238,13 +247,14 @@ def update_tokens():
             data['tokens'].append(token)
             added_count += 1
 
-    # 更新lastUpdated字段
+    # 动态更新 totalCount 和 lastUpdated 字段
+    data['totalCount'] = len(data['tokens'])
     data['lastUpdated'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
     with open(tokens_file, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    print(f"✅ Token数据已更新，新增 {added_count} 个Token资源")
+    print(f"✅ Token数据已更新，新增 {added_count} 个Token资源，总计 {data['totalCount']} 个")
 
 def git_commit_and_push():
     """提交并推送更改"""
